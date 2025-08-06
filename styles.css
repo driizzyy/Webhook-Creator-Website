@@ -1398,3 +1398,122 @@ p {
         color: black;
     }
 }
+
+/* Documentation Callout Section */
+.documentation-callout {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--discord-blurple) 0%, var(--primary-hover) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.documentation-callout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.callout-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.callout-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.callout-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.callout-text .btn {
+    background: white;
+    color: var(--discord-blurple);
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+.callout-text .btn:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+.docs-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.docs-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.docs-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.docs-item i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--discord-green);
+}
+
+.docs-item span {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for Documentation Callout */
+@media (max-width: 768px) {
+    .documentation-callout {
+        padding: 80px 0;
+    }
+    
+    .callout-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .callout-text h2 {
+        font-size: 2rem;
+    }
+    
+    .docs-preview {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .docs-item {
+        padding: 20px;
+    }
+}
