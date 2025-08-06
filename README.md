@@ -60,6 +60,7 @@ A professional, modern website for the Discord Webhook Creator Pro tool. Built w
 ```
 website/
 ├── index.html          # Main HTML file with semantic structure
+├── docs.html          # Docs HTML file with for tool documentation
 ├── styles.css          # Comprehensive CSS with custom properties
 ├── script.js           # Modular JavaScript for all functionality
 └── README.md           # This documentation file
@@ -228,3 +229,4 @@ Need help with the website?
 ---
 
 **Made with ❤️ by driizzyy | Professional Discord Tools**
+
