@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Latest updates, new features, and improvements to Discord Webhook Creator Pro. Stay up to date with all releases.">
+    <meta name="keywords" content="Discord Webhook Updates, Changelog, Release Notes, New Features, Bug Fixes">
+    
+    <!-- Performance optimizations -->
+        <link rel="preload" href="../assets/css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and meta tags -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <meta name="theme-color" content="#5865f2">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link active">Changelog</a>
+                <a href="auth.html" class="nav-link auth-btn">Sign In</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-history"></i>
+                    <span>Version History</span>
+                </div>
+                <h1 class="hero-title">
+                    What's <span class="highlight">New</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Stay up to date with the latest features, improvements, and bug fixes in Discord Webhook Creator Pro.
+                </p>
+                <div class="version-info">
+                    <div class="current-version">
+                        <span class="version-label">Current Version</span>
+                        <span class="version-number">v2.1.0</span>
+                    </div>
+                    <div class="release-date">
+                        <span class="date-label">Released</span>
+                        <span class="date-value">February 15, 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Version Filter -->
+    <section class="version-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-type="all">All Releases</button>
+                    <button class="filter-btn" data-type="major">Major Updates</button>
+                    <button class="filter-btn" data-type="minor">Minor Updates</button>
+                    <button class="filter-btn" data-type="patch">Bug Fixes</button>
+                </div>
+                <div class="version-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search versions..." id="version-search">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog Timeline -->
+    <section class="changelog-timeline">
+        <div class="container">
+            <div class="timeline-container">
+                <!-- Latest Release -->
+                <div class="timeline-item latest" data-type="minor" data-version="2.1.0">
+                    <div class="timeline-marker latest-marker">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="release-header">
+                            <div class="release-info">
+                                <h3>Version 2.1.0 - Enhanced User Experience</h3>
+                                <div class="release-meta">
+                                    <span class="release-date">February 15, 2024</span>
+                                    <span class="release-type minor">Minor Update</span>
+                                    <span class="download-count">1,247 downloads</span>
+                                </div>
+                            </div>
+                            <div class="release-actions">
+                                <a href="https://github.com/driizzyy/Webhook-Creator/releases/tag/v2.1.0" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-download"></i>
+                                    Download
+                                </a>
+                                <button class="btn btn-sm btn-secondary" onclick="toggleChangelog(this)">
+                                    <i class="fas fa-chevron-down"></i>
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="changelog-details" style="display: none;">
+                            <div class="changelog-summary">
+                                <p>This update focuses on improving the overall user experience with new UI enhancements, performance optimizations, and quality of life improvements.</p>
+                            </div>
+                            
+                            <div class="changelog-sections">
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-plus-circle text-green"></i> New Features</h4>
+                                    <ul>
+                                        <li>Added dark theme support with automatic system detection</li>
+                                        <li>Implemented webhook profile import/export functionality</li>
+                                        <li>New embed preview panel with real-time updates</li>
+                                        <li>Added keyboard shortcuts for common actions</li>
+                                        <li>Introduced webhook testing mode for safe previews</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-arrow-up text-blue"></i> Improvements</h4>
+                                    <ul>
+                                        <li>Enhanced embed editor with better color picker</li>
+                                        <li>Improved application startup time by 40%</li>
+                                        <li>Better error messages with actionable suggestions</li>
+                                        <li>Optimized memory usage for large webhook histories</li>
+                                        <li>Updated UI with modern design elements</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-bug text-red"></i> Bug Fixes</h4>
+                                    <ul>
+                                        <li>Fixed issue where long embed descriptions were truncated</li>
+                                        <li>Resolved webhook URL validation problems with certain formats</li>
+                                        <li>Fixed application crash when handling malformed JSON</li>
+                                        <li>Corrected timestamp display in different time zones</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Release -->
+                <div class="timeline-item" data-type="patch" data-version="2.0.3">
+                    <div class="timeline-marker">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="release-header">
+                            <div class="release-info">
+                                <h3>Version 2.0.3 - Critical Bug Fixes</h3>
+                                <div class="release-meta">
+                                    <span class="release-date">January 28, 2024</span>
+                                    <span class="release-type patch">Bug Fix</span>
+                                    <span class="download-count">892 downloads</span>
+                                </div>
+                            </div>
+                            <div class="release-actions">
+                                <a href="https://github.com/driizzyy/Webhook-Creator/releases/tag/v2.0.3" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-archive"></i>
+                                    Archive
+                                </a>
+                                <button class="btn btn-sm btn-secondary" onclick="toggleChangelog(this)">
+                                    <i class="fas fa-chevron-down"></i>
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="changelog-details" style="display: none;">
+                            <div class="changelog-summary">
+                                <p>This patch release addresses several critical issues discovered in version 2.0.2, ensuring better stability and reliability.</p>
+                            </div>
+                            
+                            <div class="changelog-sections">
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-bug text-red"></i> Bug Fixes</h4>
+                                    <ul>
+                                        <li>Fixed critical crash when sending webhooks with special characters</li>
+                                        <li>Resolved memory leak in the embed preview system</li>
+                                        <li>Fixed settings not persisting between application restarts</li>
+                                        <li>Corrected webhook rate limiting detection</li>
+                                        <li>Fixed UI freezing during large file operations</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-arrow-up text-blue"></i> Improvements</h4>
+                                    <ul>
+                                        <li>Enhanced error logging for better troubleshooting</li>
+                                        <li>Improved webhook response handling</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Major Release -->
+                <div class="timeline-item major-release" data-type="major" data-version="2.0.0">
+                    <div class="timeline-marker major-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="release-header">
+                            <div class="release-info">
+                                <h3>Version 2.0.0 - Complete Rewrite</h3>
+                                <div class="release-meta">
+                                    <span class="release-date">December 15, 2023</span>
+                                    <span class="release-type major">Major Update</span>
+                                    <span class="download-count">3,456 downloads</span>
+                                </div>
+                            </div>
+                            <div class="release-actions">
+                                <a href="https://github.com/driizzyy/Webhook-Creator/releases/tag/v2.0.0" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-archive"></i>
+                                    Archive
+                                </a>
+                                <button class="btn btn-sm btn-secondary" onclick="toggleChangelog(this)">
+                                    <i class="fas fa-chevron-down"></i>
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="changelog-details" style="display: none;">
+                            <div class="changelog-summary">
+                                <p>Version 2.0 represents a complete rewrite of the application with a modern interface, improved performance, and many new features based on user feedback.</p>
+                            </div>
+                            
+                            <div class="changelog-sections">
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-plus-circle text-green"></i> New Features</h4>
+                                    <ul>
+                                        <li>Completely redesigned user interface with modern styling</li>
+                                        <li>Advanced embed creator with visual editor</li>
+                                        <li>Profile system for saving webhook configurations</li>
+                                        <li>Webhook history and management</li>
+                                        <li>Multiple theme support (Light, Dark, Discord)</li>
+                                        <li>Batch webhook sending capabilities</li>
+                                        <li>Advanced field management for embeds</li>
+                                        <li>Image upload and management system</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-arrow-up text-blue"></i> Improvements</h4>
+                                    <ul>
+                                        <li>75% faster application startup time</li>
+                                        <li>Improved webhook validation and error handling</li>
+                                        <li>Better Discord API compliance</li>
+                                        <li>Enhanced security measures</li>
+                                        <li>Optimized for Windows 11 compatibility</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-exclamation-triangle text-yellow"></i> Breaking Changes</h4>
+                                    <ul>
+                                        <li>Configuration files from v1.x are not compatible</li>
+                                        <li>Minimum Windows version is now Windows 10</li>
+                                        <li>New .NET Framework requirement (4.7.2+)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Older Release -->
+                <div class="timeline-item" data-type="minor" data-version="1.8.5">
+                    <div class="timeline-marker">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="release-header">
+                            <div class="release-info">
+                                <h3>Version 1.8.5 - Final Legacy Update</h3>
+                                <div class="release-meta">
+                                    <span class="release-date">November 20, 2023</span>
+                                    <span class="release-type minor">Minor Update</span>
+                                    <span class="download-count">2,134 downloads</span>
+                                </div>
+                            </div>
+                            <div class="release-actions">
+                                <a href="https://github.com/driizzyy/Webhook-Creator/releases/tag/v1.8.5" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-archive"></i>
+                                    Archive
+                                </a>
+                                <button class="btn btn-sm btn-secondary" onclick="toggleChangelog(this)">
+                                    <i class="fas fa-chevron-down"></i>
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="changelog-details" style="display: none;">
+                            <div class="changelog-summary">
+                                <p>The final update to the 1.x series before the major v2.0 rewrite. This version includes essential bug fixes and security updates.</p>
+                            </div>
+                            
+                            <div class="changelog-sections">
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-plus-circle text-green"></i> New Features</h4>
+                                    <ul>
+                                        <li>Added webhook URL validation</li>
+                                        <li>Basic embed color picker</li>
+                                        <li>Simple settings persistence</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="changelog-section">
+                                    <h4><i class="fas fa-bug text-red"></i> Bug Fixes</h4>
+                                    <ul>
+                                        <li>Fixed Unicode character handling in webhooks</li>
+                                        <li>Resolved application hanging on network timeouts</li>
+                                        <li>Fixed embed field limit enforcement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Stats -->
+    <section class="release-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">7,729</div>
+                        <div class="stat-label">Total Downloads</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">Releases</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Issues Fixed</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">2.1k</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe for Updates -->
+    <section class="updates-subscription">
+        <div class="container">
+            <div class="subscription-content">
+                <div class="subscription-text">
+                    <h3>Stay Updated</h3>
+                    <p>Get notified when new versions are released with the latest features and improvements.</p>
+                </div>
+                <div class="subscription-form">
+                    <form class="update-subscription">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-bell"></i>
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>Discord Webhook Creator Pro</span>
+                    </div>
+                    <p>Professional Discord webhook management system with rich embed creator and modern GUI interface.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#status">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 driizzyy. All rights reserved. Made with ❤️ for the Discord community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/changelog.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Step-by-step tutorials for Discord Webhook Creator Pro - Learn to create professional webhooks and embeds.">
+    <meta name="keywords" content="Discord Webhook Tutorial, Embed Tutorial, Discord Bot Tutorial, Webhook Guide">
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="../assets/css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and meta tags -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <meta name="theme-color" content="#5865f2">
+    <meta property="og:title" content="Tutorials - Discord Webhook Creator Pro">
+    <meta property="og:description" content="Comprehensive tutorials for mastering Discord webhooks and embeds">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link active">Tutorials</a>
+                <a href="docs.html" class="nav-link">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <a href="auth.html" class="nav-link auth-btn">Sign In</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Learn & Master</span>
+                </div>
+                <h1 class="hero-title">
+                    Comprehensive <span class="highlight">Tutorials</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Master Discord webhooks with our step-by-step guides, from basic setup to advanced automation techniques.
+                </p>
+                <div class="hero-search">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search tutorials..." id="tutorial-search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Categories -->
+    <section class="tutorial-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tutorial Categories</h2>
+                <p>Choose your learning path based on your experience level</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card beginner" data-level="beginner">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Start your journey with Discord webhooks</p>
+                    <div class="category-stats">
+                        <span class="tutorial-count">8 Tutorials</span>
+                        <span class="difficulty">Easy</span>
+                    </div>
+                </div>
+                
+                <div class="category-card intermediate" data-level="intermediate">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Advanced features and customization</p>
+                    <div class="category-stats">
+                        <span class="tutorial-count">12 Tutorials</span>
+                        <span class="difficulty">Medium</span>
+                    </div>
+                </div>
+                
+                <div class="category-card advanced" data-level="advanced">
+                    <div class="category-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Professional automation and integration</p>
+                    <div class="category-stats">
+                        <span class="tutorial-count">6 Tutorials</span>
+                        <span class="difficulty">Hard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Grid -->
+    <section class="tutorials-grid">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Tutorials</button>
+                    <button class="filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                </div>
+                <div class="sort-dropdown">
+                    <select id="sort-tutorials">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="difficulty">By Difficulty</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tutorials-container" id="tutorials-container">
+                <!-- Beginner Tutorials -->
+                <article class="tutorial-card" data-level="beginner" data-date="2024-01-15">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="tutorial-badge beginner">Beginner</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Creating Your First Webhook</h3>
+                        <p>Learn the basics of setting up Discord webhooks and sending your first message.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 5 min read</span>
+                                <span><i class="fas fa-eye"></i> 1.2k views</span>
+                                <span><i class="fas fa-heart"></i> 94 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">Setup</span>
+                                <span class="tag">Basic</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tutorial-card" data-level="beginner" data-date="2024-01-18">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="tutorial-badge beginner">Beginner</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Understanding Embed Basics</h3>
+                        <p>Discover how to create beautiful embeds with titles, descriptions, and colors.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 8 min read</span>
+                                <span><i class="fas fa-eye"></i> 980 views</span>
+                                <span><i class="fas fa-heart"></i> 76 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">Embeds</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tutorial-card" data-level="intermediate" data-date="2024-01-22">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="tutorial-badge intermediate">Intermediate</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Adding Images and Thumbnails</h3>
+                        <p>Enhance your embeds with images, thumbnails, and custom attachments.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 12 min read</span>
+                                <span><i class="fas fa-eye"></i> 1.5k views</span>
+                                <span><i class="fas fa-heart"></i> 112 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">Media</span>
+                                <span class="tag">Images</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tutorial-card" data-level="intermediate" data-date="2024-01-25">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="tutorial-badge intermediate">Intermediate</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Working with Fields and Layouts</h3>
+                        <p>Create structured embeds using fields, inline layouts, and advanced formatting.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 15 min read</span>
+                                <span><i class="fas fa-eye"></i> 890 views</span>
+                                <span><i class="fas fa-heart"></i> 67 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">Layout</span>
+                                <span class="tag">Fields</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tutorial-card" data-level="advanced" data-date="2024-01-28">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="tutorial-badge advanced">Advanced</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Webhook Automation Scripts</h3>
+                        <p>Build automated systems that send webhooks based on triggers and events.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 25 min read</span>
+                                <span><i class="fas fa-eye"></i> 1.8k views</span>
+                                <span><i class="fas fa-heart"></i> 145 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">Automation</span>
+                                <span class="tag">Scripts</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tutorial-card" data-level="advanced" data-date="2024-02-02">
+                    <div class="tutorial-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="tutorial-badge advanced">Advanced</div>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>API Integration Techniques</h3>
+                        <p>Connect external APIs to your webhooks for dynamic content and real-time updates.</p>
+                        <div class="tutorial-meta">
+                            <div class="tutorial-stats">
+                                <span><i class="fas fa-clock"></i> 30 min read</span>
+                                <span><i class="fas fa-eye"></i> 756 views</span>
+                                <span><i class="fas fa-heart"></i> 89 likes</span>
+                            </div>
+                            <div class="tutorial-tags">
+                                <span class="tag">API</span>
+                                <span class="tag">Integration</span>
+                            </div>
+                        </div>
+                        <a href="#" class="tutorial-link">Start Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-secondary load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Tutorials
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated with New Tutorials</h3>
+                    <p>Get notified when we publish new tutorials and guides to help you master Discord webhooks.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="newsletter-signup">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-bell"></i>
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>Discord Webhook Creator Pro</span>
+                    </div>
+                    <p>Professional Discord webhook management system with rich embed creator and modern GUI interface.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#status">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 driizzyy. All rights reserved. Made with ❤️ for the Discord community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/tutorials.js"></script>
+</body>
+</html>

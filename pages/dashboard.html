@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Discord Webhook Creator Pro</title>
+    <meta name="description" content="User dashboard with development roadmap, tool status, and exclusive content for Discord Webhook Creator Pro members">
+    <meta name="keywords" content="Discord Webhook Dashboard, Development Roadmap, Tool Status, Premium Features">
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="../assets/css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and meta tags -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <meta name="theme-color" content="#5865f2">
+    <meta property="og:title" content="Dashboard - Discord Webhook Creator Pro">
+    <meta property="og:description" content="Access exclusive features and development insights">
+    <meta property="og:type" content="website">
+</head>
+<body class="dashboard-page">
+    <!-- Navigation -->
+    <nav class="navbar dashboard-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <div class="user-menu">
+                    <div class="user-avatar" onclick="toggleUserMenu()">
+                        <i class="fas fa-user"></i>
+                        <span id="user-name">John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <a href="#profile" class="dropdown-item">
+                            <i class="fas fa-user-edit"></i>
+                            Edit Profile
+                        </a>
+                        <a href="#settings" class="dropdown-item">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                        <a href="#billing" class="dropdown-item">
+                            <i class="fas fa-credit-card"></i>
+                            Billing
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" onclick="signOut()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#overview" class="sidebar-link active" data-section="overview">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#status" class="sidebar-link" data-section="status">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Tool Status</span>
+                </a>
+                <a href="#roadmap" class="sidebar-link" data-section="roadmap">
+                    <i class="fas fa-route"></i>
+                    <span>Development Roadmap</span>
+                </a>
+                <a href="#beta" class="sidebar-link" data-section="beta">
+                    <i class="fas fa-flask"></i>
+                    <span>Beta Access</span>
+                </a>
+                <a href="#community" class="sidebar-link" data-section="community">
+                    <i class="fas fa-users"></i>
+                    <span>Community</span>
+                </a>
+                <a href="#analytics" class="sidebar-link" data-section="analytics">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Usage Analytics</span>
+                </a>
+                <a href="#downloads" class="sidebar-link" data-section="downloads">
+                    <i class="fas fa-download"></i>
+                    <span>Downloads</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Overview Section -->
+            <section class="dashboard-section active" id="overview">
+                <div class="section-header">
+                    <h1>Welcome back, <span id="dashboard-user-name">John</span>!</h1>
+                    <p>Here's what's happening with Discord Webhook Creator Pro</p>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon online">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Tool Status</h3>
+                            <p class="stat-value">Online</p>
+                            <span class="stat-change positive">99.9% uptime</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Latest Version</h3>
+                            <p class="stat-value">v1.2.0</p>
+                            <span class="stat-change">Released 3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Active Users</h3>
+                            <p class="stat-value">2,847</p>
+                            <span class="stat-change positive">+12% this week</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Next Update</h3>
+                            <p class="stat-value">Aug 15</p>
+                            <span class="stat-change">8 days remaining</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Updates -->
+                <div class="updates-section">
+                    <h2>Recent Updates</h2>
+                    <div class="updates-list">
+                        <div class="update-item">
+                            <div class="update-icon new">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>New Feature: Advanced Embed Builder</h4>
+                                <p>Enhanced embed builder with field management and preview functionality</p>
+                                <span class="update-date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-icon fix">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Bug Fix: Memory Leak Resolution</h4>
+                                <p>Fixed memory leak in background processes affecting long-running sessions</p>
+                                <span class="update-date">1 week ago</span>
+                            </div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-icon improvement">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="update-content">
+                                <h4>Performance: 30% Faster Startup</h4>
+                                <p>Optimized application initialization and resource loading</p>
+                                <span class="update-date">2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h2>Quick Actions</h2>
+                    <div class="actions-grid">
+                        <a href="#downloads" class="action-card" onclick="switchSection('downloads')">
+                            <i class="fas fa-download"></i>
+                            <h3>Download Latest</h3>
+                            <p>Get the newest version with latest features</p>
+                        </a>
+                        <a href="#beta" class="action-card" onclick="switchSection('beta')">
+                            <i class="fas fa-flask"></i>
+                            <h3>Join Beta</h3>
+                            <p>Test upcoming features before release</p>
+                        </a>
+                        <a href="#community" class="action-card" onclick="switchSection('community')">
+                            <i class="fas fa-comments"></i>
+                            <h3>Community</h3>
+                            <p>Connect with other users and developers</p>
+                        </a>
+                        <a href="support.html" class="action-card">
+                            <i class="fas fa-life-ring"></i>
+                            <h3>Get Support</h3>
+                            <p>Priority support for registered users</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool Status Section -->
+            <section class="dashboard-section" id="status">
+                <div class="section-header">
+                    <h1>Tool Status</h1>
+                    <p>Real-time monitoring of Discord Webhook Creator Pro</p>
+                </div>
+
+                <div class="status-overview">
+                    <div class="status-indicator">
+                        <div class="status-dot online"></div>
+                        <h2>All Systems Operational</h2>
+                        <p>All services are running normally</p>
+                    </div>
+                </div>
+
+                <div class="status-services">
+                    <h3>Service Status</h3>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Core Application</h4>
+                                <p>Main webhook creator functionality</p>
+                            </div>
+                            <div class="service-status online">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Operational</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Discord API</h4>
+                                <p>Discord webhook and messaging services</p>
+                            </div>
+                            <div class="service-status online">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Operational</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>File Upload</h4>
+                                <p>File attachment and upload functionality</p>
+                            </div>
+                            <div class="service-status online">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Operational</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Configuration Sync</h4>
+                                <p>Settings and webhook synchronization</p>
+                            </div>
+                            <div class="service-status maintenance">
+                                <i class="fas fa-tools"></i>
+                                <span>Maintenance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uptime-chart">
+                    <h3>Uptime History (Last 30 Days)</h3>
+                    <div class="chart-container">
+                        <div class="uptime-bar">
+                            <div class="uptime-fill" style="width: 99.9%"></div>
+                        </div>
+                        <div class="uptime-stats">
+                            <div class="uptime-stat">
+                                <span class="label">Current Uptime</span>
+                                <span class="value">99.9%</span>
+                            </div>
+                            <div class="uptime-stat">
+                                <span class="label">Average Response</span>
+                                <span class="value">120ms</span>
+                            </div>
+                            <div class="uptime-stat">
+                                <span class="label">Last Incident</span>
+                                <span class="value">15 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Roadmap Section -->
+            <section class="dashboard-section" id="roadmap">
+                <div class="section-header">
+                    <h1>Development Roadmap</h1>
+                    <p>Upcoming features and improvements planned for Discord Webhook Creator Pro</p>
+                </div>
+
+                <div class="roadmap-timeline">
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <div class="roadmap-header">
+                                <h3>Enhanced Embed Builder</h3>
+                                <span class="roadmap-status completed">Completed</span>
+                                <span class="roadmap-date">July 2025</span>
+                            </div>
+                            <p>Advanced embed builder with field management, preview functionality, and template system</p>
+                            <div class="roadmap-features">
+                                <span class="feature-tag">Visual Editor</span>
+                                <span class="feature-tag">Template System</span>
+                                <span class="feature-tag">Live Preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item in-progress">
+                        <div class="roadmap-marker">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <div class="roadmap-header">
+                                <h3>Multi-Channel Management</h3>
+                                <span class="roadmap-status in-progress">In Progress</span>
+                                <span class="roadmap-date">August 2025</span>
+                            </div>
+                            <p>Manage multiple Discord channels and webhooks from a single interface</p>
+                            <div class="roadmap-features">
+                                <span class="feature-tag">Channel Groups</span>
+                                <span class="feature-tag">Bulk Operations</span>
+                                <span class="feature-tag">Cross-Channel Sync</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                                <span class="progress-text">65% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item planned">
+                        <div class="roadmap-marker">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <div class="roadmap-header">
+                                <h3>Scheduled Messages</h3>
+                                <span class="roadmap-status planned">Planned</span>
+                                <span class="roadmap-date">September 2025</span>
+                            </div>
+                            <p>Schedule webhook messages to be sent at specific times or based on triggers</p>
+                            <div class="roadmap-features">
+                                <span class="feature-tag">Time-based</span>
+                                <span class="feature-tag">Event Triggers</span>
+                                <span class="feature-tag">Recurring Messages</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item planned">
+                        <div class="roadmap-marker">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <div class="roadmap-header">
+                                <h3>API Integration Platform</h3>
+                                <span class="roadmap-status planned">Planned</span>
+                                <span class="roadmap-date">October 2025</span>
+                            </div>
+                            <p>Connect with external APIs and services for automated webhook delivery</p>
+                            <div class="roadmap-features">
+                                <span class="feature-tag">REST API</span>
+                                <span class="feature-tag">Webhooks</span>
+                                <span class="feature-tag">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item future">
+                        <div class="roadmap-marker">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <div class="roadmap-header">
+                                <h3>Mobile App</h3>
+                                <span class="roadmap-status future">Future</span>
+                                <span class="roadmap-date">Q4 2025</span>
+                            </div>
+                            <p>Native mobile application for iOS and Android platforms</p>
+                            <div class="roadmap-features">
+                                <span class="feature-tag">Cross-Platform</span>
+                                <span class="feature-tag">Push Notifications</span>
+                                <span class="feature-tag">Offline Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-voting">
+                    <h3>Feature Voting</h3>
+                    <p>Help us prioritize features by voting on what matters most to you</p>
+                    <div class="voting-cards">
+                        <div class="voting-card">
+                            <h4>Custom Webhook Avatars</h4>
+                            <p>Set custom avatars and names for your webhooks</p>
+                            <div class="voting-stats">
+                                <span class="vote-count">142 votes</span>
+                                <button class="vote-btn" onclick="voteFeature('avatars')">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    Vote
+                                </button>
+                            </div>
+                        </div>
+                        <div class="voting-card">
+                            <h4>Message Templates</h4>
+                            <p>Save and reuse message templates for quick sending</p>
+                            <div class="voting-stats">
+                                <span class="vote-count">89 votes</span>
+                                <button class="vote-btn" onclick="voteFeature('templates')">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    Vote
+                                </button>
+                            </div>
+                        </div>
+                        <div class="voting-card">
+                            <h4>Webhook Analytics</h4>
+                            <p>Track message delivery and engagement statistics</p>
+                            <div class="voting-stats">
+                                <span class="vote-count">67 votes</span>
+                                <button class="vote-btn" onclick="voteFeature('analytics')">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    Vote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Beta Access Section -->
+            <section class="dashboard-section" id="beta">
+                <div class="section-header">
+                    <h1>Beta Access</h1>
+                    <p>Get early access to upcoming features and help shape the future of the tool</p>
+                </div>
+
+                <div class="beta-status">
+                    <div class="beta-card active">
+                        <div class="beta-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Beta Tester</h3>
+                        <p>You have access to beta features and early releases</p>
+                        <div class="beta-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Early feature access</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Direct developer feedback</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Exclusive beta releases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-releases">
+                    <h3>Available Beta Releases</h3>
+                    <div class="releases-list">
+                        <div class="release-item">
+                            <div class="release-info">
+                                <h4>v1.3.0-beta.2</h4>
+                                <p>Multi-channel management and improved UI</p>
+                                <span class="release-date">Released 2 days ago</span>
+                            </div>
+                            <div class="release-actions">
+                                <button class="btn btn-primary" onclick="downloadBeta('1.3.0-beta.2')">
+                                    <i class="fas fa-download"></i>
+                                    Download
+                                </button>
+                                <button class="btn btn-secondary" onclick="viewChangelog('1.3.0-beta.2')">
+                                    <i class="fas fa-list"></i>
+                                    Changelog
+                                </button>
+                            </div>
+                        </div>
+                        <div class="release-item">
+                            <div class="release-info">
+                                <h4>v1.3.0-beta.1</h4>
+                                <p>Initial multi-channel support implementation</p>
+                                <span class="release-date">Released 1 week ago</span>
+                            </div>
+                            <div class="release-actions">
+                                <button class="btn btn-secondary" onclick="downloadBeta('1.3.0-beta.1')">
+                                    <i class="fas fa-download"></i>
+                                    Download
+                                </button>
+                                <button class="btn btn-secondary" onclick="viewChangelog('1.3.0-beta.1')">
+                                    <i class="fas fa-list"></i>
+                                    Changelog
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-feedback">
+                    <h3>Provide Feedback</h3>
+                    <div class="feedback-form">
+                        <textarea placeholder="Share your experience with the beta version..." id="beta-feedback-text"></textarea>
+                        <div class="feedback-actions">
+                            <select id="feedback-category">
+                                <option value="bug">Bug Report</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="improvement">Improvement</option>
+                                <option value="general">General Feedback</option>
+                            </select>
+                            <button class="btn btn-primary" onclick="submitBetaFeedback()">
+                                <i class="fas fa-paper-plane"></i>
+                                Submit Feedback
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Section -->
+            <section class="dashboard-section" id="community">
+                <div class="section-header">
+                    <h1>Community</h1>
+                    <p>Connect with other users, share tips, and get help from the community</p>
+                </div>
+
+                <div class="community-stats">
+                    <div class="stat-item">
+                        <h3>2,847</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>156</h3>
+                        <p>Online Now</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1,234</h3>
+                        <p>Messages Today</p>
+                    </div>
+                </div>
+
+                <div class="community-channels">
+                    <h3>Community Channels</h3>
+                    <div class="channels-grid">
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>General Discussion</h4>
+                            <p>Chat with other users about the tool and Discord automation</p>
+                            <div class="channel-stats">
+                                <span>45 online</span>
+                                <span>•</span>
+                                <span>Last message 2m ago</span>
+                            </div>
+                            <a href="#" class="channel-link">Join Discussion</a>
+                        </div>
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h4>Help & Support</h4>
+                            <p>Get help from experienced users and community moderators</p>
+                            <div class="channel-stats">
+                                <span>23 online</span>
+                                <span>•</span>
+                                <span>Last message 5m ago</span>
+                            </div>
+                            <a href="#" class="channel-link">Get Help</a>
+                        </div>
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Feature Ideas</h4>
+                            <p>Share your ideas for new features and improvements</p>
+                            <div class="channel-stats">
+                                <span>18 online</span>
+                                <span>•</span>
+                                <span>Last message 15m ago</span>
+                            </div>
+                            <a href="#" class="channel-link">Share Ideas</a>
+                        </div>
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <h4>Show & Tell</h4>
+                            <p>Share your webhook creations and creative use cases</p>
+                            <div class="channel-stats">
+                                <span>31 online</span>
+                                <span>•</span>
+                                <span>Last message 8m ago</span>
+                            </div>
+                            <a href="#" class="channel-link">Share Work</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-posts">
+                    <h3>Recent Community Posts</h3>
+                    <div class="posts-list">
+                        <div class="post-item">
+                            <div class="post-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-header">
+                                    <h4>Alex_Dev</h4>
+                                    <span class="post-time">2 hours ago</span>
+                                </div>
+                                <p>Just implemented an automated server status webhook that posts updates every hour. Works perfectly with the new template system!</p>
+                                <div class="post-actions">
+                                    <button class="post-action">
+                                        <i class="fas fa-heart"></i>
+                                        <span>12</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <i class="fas fa-comment"></i>
+                                        <span>3</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-header">
+                                    <h4>WebhookMaster</h4>
+                                    <span class="post-time">4 hours ago</span>
+                                </div>
+                                <p>Quick tip: You can use hex color codes in embeds to match your server's theme. #5865F2 is Discord's brand color!</p>
+                                <div class="post-actions">
+                                    <button class="post-action">
+                                        <i class="fas fa-heart"></i>
+                                        <span>8</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <i class="fas fa-comment"></i>
+                                        <span>1</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Usage Analytics Section -->
+            <section class="dashboard-section" id="analytics">
+                <div class="section-header">
+                    <h1>Usage Analytics</h1>
+                    <p>Track your webhook usage and performance statistics</p>
+                </div>
+
+                <div class="analytics-overview">
+                    <div class="metric-card">
+                        <h3>Messages Sent</h3>
+                        <div class="metric-value">1,247</div>
+                        <div class="metric-change positive">+23% vs last month</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Active Webhooks</h3>
+                        <div class="metric-value">12</div>
+                        <div class="metric-change">+2 this month</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Success Rate</h3>
+                        <div class="metric-value">99.8%</div>
+                        <div class="metric-change positive">+0.2% improvement</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Avg Response Time</h3>
+                        <div class="metric-value">156ms</div>
+                        <div class="metric-change negative">+12ms vs last month</div>
+                    </div>
+                </div>
+
+                <div class="analytics-charts">
+                    <div class="chart-container">
+                        <h3>Messages Sent Over Time</h3>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Chart would be displayed here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Downloads Section -->
+            <section class="dashboard-section" id="downloads">
+                <div class="section-header">
+                    <h1>Downloads</h1>
+                    <p>Access all available versions and exclusive member downloads</p>
+                </div>
+
+                <div class="download-categories">
+                    <div class="download-category">
+                        <h3>Latest Stable Release</h3>
+                        <div class="download-item featured">
+                            <div class="download-info">
+                                <h4>Discord Webhook Creator Pro v1.2.0</h4>
+                                <p>Latest stable version with enhanced embed builder and bug fixes</p>
+                                <div class="download-meta">
+                                    <span>Released 3 days ago</span>
+                                    <span>•</span>
+                                    <span>45.2 MB</span>
+                                    <span>•</span>
+                                    <span>Windows 10/11</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary download-btn" onclick="downloadVersion('1.2.0')">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-category">
+                        <h3>Previous Versions</h3>
+                        <div class="versions-list">
+                            <div class="download-item">
+                                <div class="download-info">
+                                    <h4>v1.1.3</h4>
+                                    <p>Performance improvements and UI enhancements</p>
+                                    <span class="download-date">2 weeks ago</span>
+                                </div>
+                                <button class="btn btn-secondary download-btn" onclick="downloadVersion('1.1.3')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                            <div class="download-item">
+                                <div class="download-info">
+                                    <h4>v1.1.2</h4>
+                                    <p>Bug fixes and stability improvements</p>
+                                    <span class="download-date">1 month ago</span>
+                                </div>
+                                <button class="btn btn-secondary download-btn" onclick="downloadVersion('1.1.2')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="download-category">
+                        <h3>Exclusive Member Content</h3>
+                        <div class="exclusive-downloads">
+                            <div class="download-item premium">
+                                <div class="premium-badge">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Premium</span>
+                                </div>
+                                <div class="download-info">
+                                    <h4>Configuration Templates Pack</h4>
+                                    <p>Pre-built templates for common webhook use cases</p>
+                                    <span class="download-size">2.1 MB</span>
+                                </div>
+                                <button class="btn btn-primary download-btn" onclick="downloadPremium('templates')">
+                                    <i class="fas fa-download"></i>
+                                    Download
+                                </button>
+                            </div>
+                            <div class="download-item premium">
+                                <div class="premium-badge">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Premium</span>
+                                </div>
+                                <div class="download-info">
+                                    <h4>Advanced User Guide</h4>
+                                    <p>Comprehensive PDF guide with advanced techniques</p>
+                                    <span class="download-size">8.7 MB</span>
+                                </div>
+                                <button class="btn btn-primary download-btn" onclick="downloadPremium('guide')">
+                                    <i class="fas fa-download"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

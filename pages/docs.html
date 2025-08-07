@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Complete documentation, setup guides, and API reference for Discord Webhook Creator Pro - Professional webhook management tool">
+    <meta name="keywords" content="Discord Webhook Documentation, API Reference, Setup Guide, Webhook Tutorial">
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="../assets/css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and meta tags -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <meta name="theme-color" content="#5865f2">
+    <meta property="og:title" content="Documentation - Discord Webhook Creator Pro">
+    <meta property="og:description" content="Complete documentation and API reference for Discord webhook management">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link active">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <a href="auth.html" class="nav-link auth-btn">Sign In</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-book"></i>
+                    <span>Documentation</span>
+                </div>
+                <h1 class="hero-title">
+                    Complete <span class="highlight">Documentation</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Everything you need to know about Discord Webhook Creator Pro - from quick setup to advanced automation.
+                </p>
+                <div class="hero-actions">
+                    <a href="#quick-start" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Quick Start Guide
+                    </a>
+                    <a href="#api-reference" class="btn btn-secondary">
+                        <i class="fas fa-code"></i>
+                        API Reference
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Navigation -->
+    <section class="docs-navigation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentation Sections</h2>
+                <p>Navigate through our comprehensive documentation</p>
+            </div>
+            
+            <div class="docs-nav-grid">
+                <a href="#quick-start" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Start</h3>
+                    <p>Get up and running in minutes with our step-by-step guide</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty easy">Beginner</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                </a>
+                
+                <a href="#installation" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Installation</h3>
+                    <p>Download options and detailed installation instructions</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty easy">Beginner</span>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                </a>
+                
+                <a href="#user-guide" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-user-guide"></i>
+                    </div>
+                    <h3>User Guide</h3>
+                    <p>Complete feature walkthrough and best practices</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty medium">Intermediate</span>
+                        <span class="read-time">15 min read</span>
+                    </div>
+                </a>
+                
+                <a href="#api-reference" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>API Reference</h3>
+                    <p>Technical documentation for developers and integrations</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty hard">Advanced</span>
+                        <span class="read-time">20 min read</span>
+                    </div>
+                </a>
+                
+                <a href="#troubleshooting" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Troubleshooting</h3>
+                    <p>Common issues and their solutions</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty medium">Intermediate</span>
+                        <span class="read-time">10 min read</span>
+                    </div>
+                </a>
+                
+                <a href="#advanced" class="docs-nav-card">
+                    <div class="docs-nav-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Advanced Features</h3>
+                    <p>Power user features and automation techniques</p>
+                    <div class="nav-card-footer">
+                        <span class="difficulty hard">Advanced</span>
+                        <span class="read-time">25 min read</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Guide -->
+    <section id="quick-start" class="docs-section">
+        <div class="container">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <div class="docs-breadcrumb">
+                        <span>Documentation</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Quick Start</span>
+                    </div>
+                    <h2 class="docs-title">
+                        <i class="fas fa-rocket"></i>
+                        Quick Start Guide
+                    </h2>
+                    <p class="docs-subtitle">Get Discord Webhook Creator Pro running in less than 5 minutes</p>
+                </div>
+
+                <div class="step-guide">
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="step-number">1</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Download & Install</h3>
+                            <p>Choose your preferred installation method:</p>
+                            <div class="download-options">
+                                <div class="download-option recommended">
+                                    <div class="option-header">
+                                        <i class="fas fa-star"></i>
+                                        <span>Recommended</span>
+                                    </div>
+                                    <h4>Executable File</h4>
+                                    <p>Download the pre-built executable for instant use</p>
+                                    <a href="#download" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-download"></i>
+                                        Download .exe
+                                    </a>
+                                </div>
+                                <div class="download-option">
+                                    <div class="option-header">
+                                        <i class="fas fa-code"></i>
+                                        <span>For Developers</span>
+                                    </div>
+                                    <h4>Source Code</h4>
+                                    <p>Clone the repository and run from Python</p>
+                                    <div class="code-snippet">
+                                        <code>git clone https://github.com/driizzyy/Webhook-Creator.git</code>
+                                        <button class="copy-btn" onclick="copyToClipboard(this)">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="step-number">2</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Configure Discord Access</h3>
+                            <p>Set up your Discord credentials for message sending:</p>
+                            
+                            <div class="config-tabs">
+                                <div class="tab-buttons">
+                                    <button class="tab-btn active" data-tab="user-token">User Token</button>
+                                    <button class="tab-btn" data-tab="bot-token">Bot Token</button>
+                                </div>
+                                
+                                <div class="tab-content active" id="user-token">
+                                    <div class="warning-box">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <strong>Important:</strong> User tokens are for personal use only. Never share your token!
+                                    </div>
+                                    <h4>Getting Your User Token</h4>
+                                    <ol class="instruction-list">
+                                        <li>Open Discord in your web browser</li>
+                                        <li>Press <kbd>F12</kbd> to open Developer Tools</li>
+                                        <li>Navigate to <strong>Application</strong> → <strong>Local Storage</strong> → <strong>https://discord.com</strong></li>
+                                        <li>Find the "token" entry and copy its value (remove quotes)</li>
+                                        <li>Paste the token in the application's Settings tab</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tab-content" id="bot-token">
+                                    <div class="info-box">
+                                        <i class="fas fa-info-circle"></i>
+                                        <strong>Note:</strong> Bot tokens are recommended for server-wide automation.
+                                    </div>
+                                    <h4>Creating a Discord Bot</h4>
+                                    <ol class="instruction-list">
+                                        <li>Go to <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a></li>
+                                        <li>Click "New Application" and name your bot</li>
+                                        <li>Navigate to the "Bot" section</li>
+                                        <li>Click "Add Bot" and copy the token</li>
+                                        <li>Invite the bot to your server with appropriate permissions</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="step-number">3</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Launch & Configure</h3>
+                            <p>Start the application and complete the initial setup:</p>
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <i class="fas fa-cog"></i>
+                                    <h4>Settings Tab</h4>
+                                    <p>Enter your Discord token and configure preferences</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-hashtag"></i>
+                                    <h4>Channel ID</h4>
+                                    <p>Add the target channel ID for message delivery</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-sync"></i>
+                                    <h4>Test Connection</h4>
+                                    <p>Use the "Refresh" button to verify connectivity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="step-number">4</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Create Your First Webhook</h3>
+                            <p>Set up webhooks for rich embed messages:</p>
+                            <div class="webhook-setup">
+                                <div class="setup-visual">
+                                    <div class="mock-interface">
+                                        <div class="interface-header">Discord Messages Tab</div>
+                                        <div class="interface-content">
+                                            <button class="mock-btn primary">Create Webhook</button>
+                                            <div class="mock-dropdown">
+                                                <span>Select Webhook ▼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setup-instructions">
+                                    <ul class="checklist">
+                                        <li><i class="fas fa-check"></i> Click "Create Webhook" in the Discord Messages tab</li>
+                                        <li><i class="fas fa-check"></i> Webhook will be automatically created and saved</li>
+                                        <li><i class="fas fa-check"></i> Select it from the dropdown for embed messages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="step-number">5</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Send Your First Message</h3>
+                            <p>You're ready to start sending messages!</p>
+                            <div class="message-types">
+                                <div class="message-type">
+                                    <div class="type-icon">
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                    <h4>Text Message</h4>
+                                    <p>Simple text messages with formatting support</p>
+                                </div>
+                                <div class="message-type">
+                                    <div class="type-icon">
+                                        <i class="fas fa-layer-group"></i>
+                                    </div>
+                                    <h4>Rich Embed</h4>
+                                    <p>Professional embeds with colors, images, and fields</p>
+                                </div>
+                                <div class="message-type">
+                                    <div class="type-icon">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <h4>File Upload</h4>
+                                    <p>Send files and attachments with your messages</p>
+                                </div>
+                            </div>
+                            <div class="success-box">
+                                <i class="fas fa-check-circle"></i>
+                                <p><strong>Congratulations!</strong> You're now ready to use Discord Webhook Creator Pro. Explore the other tabs to discover more features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="docs-section">
+        <div class="container">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <div class="docs-breadcrumb">
+                        <span>Documentation</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Installation</span>
+                    </div>
+                    <h2 class="docs-title">
+                        <i class="fas fa-download"></i>
+                        Installation Guide
+                    </h2>
+                    <p class="docs-subtitle">Choose the installation method that works best for you</p>
+                </div>
+
+                <div class="installation-methods">
+                    <div class="method-card featured">
+                        <div class="method-header">
+                            <div class="method-badge recommended">
+                                <i class="fas fa-star"></i>
+                                <span>Recommended</span>
+                            </div>
+                            <h3>
+                                <i class="fas fa-desktop"></i>
+                                Pre-built Executable
+                            </h3>
+                            <p>Perfect for users who want to start immediately without any setup</p>
+                        </div>
+                        
+                        <div class="method-content">
+                            <div class="requirements-box">
+                                <h4><i class="fas fa-list-check"></i> System Requirements</h4>
+                                <div class="requirements-grid">
+                                    <div class="requirement-item">
+                                        <i class="fas fa-laptop"></i>
+                                        <span>Windows 10/11 (64-bit)</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-wifi"></i>
+                                        <span>Internet connection</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fab fa-discord"></i>
+                                        <span>Discord account</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-hdd"></i>
+                                        <span>50MB free space</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="steps-container">
+                                <h4><i class="fas fa-play"></i> Installation Steps</h4>
+                                <div class="step-list">
+                                    <div class="step-item-compact">
+                                        <span class="step-number">1</span>
+                                        <div class="step-text">
+                                            <span>Visit our <a href="https://github.com/driizzyy/Webhook-Creator/releases/latest" target="_blank">GitHub Releases page</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="step-item-compact">
+                                        <span class="step-number">2</span>
+                                        <div class="step-text">
+                                            <span>Download <code>Discord_Webhook_Creator_Pro.exe</code></span>
+                                        </div>
+                                    </div>
+                                    <div class="step-item-compact">
+                                        <span class="step-number">3</span>
+                                        <div class="step-text">
+                                            <span>Place the file in a dedicated folder</span>
+                                        </div>
+                                    </div>
+                                    <div class="step-item-compact">
+                                        <span class="step-number">4</span>
+                                        <div class="step-text">
+                                            <span>Double-click to run - no installation required!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tip-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <p><strong>Pro Tip:</strong> Create a dedicated folder for the tool and its configuration files for better organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-badge developer">
+                                <i class="fas fa-code"></i>
+                                <span>For Developers</span>
+                            </div>
+                            <h3>
+                                <i class="fab fa-python"></i>
+                                Run from Source
+                            </h3>
+                            <p>Ideal for developers or users who want to modify the code</p>
+                        </div>
+                        
+                        <div class="method-content">
+                            <div class="requirements-box">
+                                <h4><i class="fas fa-list-check"></i> Prerequisites</h4>
+                                <div class="requirements-grid">
+                                    <div class="requirement-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python 3.7+</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-terminal"></i>
+                                        <span>Git (optional)</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-package"></i>
+                                        <span>pip package manager</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="code-section">
+                                <h4><i class="fas fa-terminal"></i> Installation Commands</h4>
+                                <div class="code-block-container">
+                                    <div class="code-block">
+                                        <div class="code-header">
+                                            <span>Clone Repository</span>
+                                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                        <code>git clone https://github.com/driizzyy/Webhook-Creator.git
+cd Webhook-Creator</code>
+                                    </div>
+                                    <div class="code-block">
+                                        <div class="code-header">
+                                            <span>Install Dependencies</span>
+                                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                        <code>pip install -r requirements.txt</code>
+                                    </div>
+                                    <div class="code-block">
+                                        <div class="code-header">
+                                            <span>Run Application</span>
+                                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                        <code>python main.py</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="troubleshooting-preview">
+                    <h3><i class="fas fa-question-circle"></i> Having Issues?</h3>
+                    <p>If you encounter any problems during installation, check our <a href="#troubleshooting">troubleshooting section</a> or visit our <a href="support.html">support page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                            <ul>
+                                <li>Python 3.7 or higher</li>
+                                <li>Git (optional, for cloning)</li>
+                                <li>Internet connection</li>
+                            </ul>
+                            <h4>📥 Installation Steps:</h4>
+                            <ol>
+                                <li><strong>Clone the Repository:</strong>
+                                    <div class="code-block">
+                                        <code>git clone https://github.com/driizzyy/Webhook-Creator.git<br>cd Webhook-Creator</code>
+                                    </div>
+                                </li>
+                                <li><strong>Install Dependencies:</strong>
+                                    <div class="code-block">
+                                        <code>pip install -r requirements.txt</code>
+                                    </div>
+                                </li>
+                                <li><strong>Run the Application:</strong>
+                                    <div class="code-block">
+                                        <code>python main.py</code>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="note">
+                                <strong>🔧 Alternative:</strong> Download the ZIP file from GitHub if you don't have Git installed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-card">
+                        <h3>🏗️ Method 3: Build Your Own Executable</h3>
+                        <p class="method-description">For advanced users who want to create their own executable.</p>
+                        <div class="installation-steps">
+                            <h4>📋 Requirements:</h4>
+                            <ul>
+                                <li>Python 3.7+ with pip</li>
+                                <li>PyInstaller package</li>
+                                <li>Source code (Method 2 setup)</li>
+                            </ul>
+                            <h4>🔨 Build Steps:</h4>
+                            <ol>
+                                <li><strong>Install PyInstaller:</strong>
+                                    <div class="code-block">
+                                        <code>pip install pyinstaller</code>
+                                    </div>
+                                </li>
+                                <li><strong>Build using the provided spec file:</strong>
+                                    <div class="code-block">
+                                        <code>pyinstaller discord_tool.spec</code>
+                                    </div>
+                                </li>
+                                <li><strong>Find your executable:</strong>
+                                    <div class="code-block">
+                                        <code>./dist/Discord_Webhook_Creator_Pro.exe</code>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="note">
+                                <strong>⚡ Build Options:</strong> The spec file includes optimizations for file size and performance. You can modify it for custom builds.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Guide -->
+    <section id="user-guide" class="docs-section">
+        <div class="container">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <div class="docs-breadcrumb">
+                        <span>Documentation</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>User Guide</span>
+                    </div>
+                    <h2 class="docs-title">
+                        <i class="fas fa-user-guide"></i>
+                        Complete User Guide
+                    </h2>
+                    <p class="docs-subtitle">Master every feature of Discord Webhook Creator Pro</p>
+                </div>
+
+                <div class="guide-sections">
+                    <!-- Interface Overview -->
+                    <div class="guide-section">
+                        <h3><i class="fas fa-desktop"></i> Interface Overview</h3>
+                        <p>Understanding the main interface and navigation</p>
+                        
+                        <div class="interface-layout">
+                            <div class="interface-mockup">
+                                <div class="mockup-tabs">
+                                    <div class="tab active">Discord Messages</div>
+                                    <div class="tab">File Upload</div>
+                                    <div class="tab">Settings</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-section">Message Composer</div>
+                                    <div class="mockup-section">Embed Builder</div>
+                                    <div class="mockup-section">Send Controls</div>
+                                </div>
+                            </div>
+                            <div class="interface-description">
+                                <h4>Main Components</h4>
+                                <ul class="feature-list">
+                                    <li><strong>Discord Messages Tab:</strong> Main message composition area</li>
+                                    <li><strong>File Upload Tab:</strong> Send files and attachments</li>
+                                    <li><strong>Settings Tab:</strong> Configure tokens and preferences</li>
+                                    <li><strong>Embed Builder:</strong> Create rich embeds with visual editor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message Types -->
+                    <div class="guide-section">
+                        <h3><i class="fas fa-comment-dots"></i> Message Types</h3>
+                        <p>Learn about different message formats and their use cases</p>
+                        
+                        <div class="message-types-grid">
+                            <div class="message-type-card">
+                                <div class="type-header">
+                                    <i class="fas fa-font"></i>
+                                    <h4>Text Messages</h4>
+                                </div>
+                                <div class="type-content">
+                                    <p>Simple text messages with Discord markdown formatting support</p>
+                                    <div class="example-box">
+                                        <h5>Example:</h5>
+                                        <code>**Bold text** *italic* ~~strikethrough~~ `code`</code>
+                                    </div>
+                                    <ul class="features">
+                                        <li>Markdown formatting</li>
+                                        <li>Emoji support</li>
+                                        <li>Mention users/roles</li>
+                                        <li>2000 character limit</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="message-type-card featured">
+                                <div class="type-header">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h4>Rich Embeds</h4>
+                                    <div class="popular-badge">Popular</div>
+                                </div>
+                                <div class="type-content">
+                                    <p>Professional-looking embedded content with colors and fields</p>
+                                    <div class="embed-preview">
+                                        <div class="embed-mockup">
+                                            <div class="embed-color-bar"></div>
+                                            <div class="embed-content">
+                                                <div class="embed-title">Embed Title</div>
+                                                <div class="embed-description">Description text...</div>
+                                                <div class="embed-field">Field: Value</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="features">
+                                        <li>Custom colors</li>
+                                        <li>Images & thumbnails</li>
+                                        <li>Fields & footers</li>
+                                        <li>Timestamps</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="message-type-card">
+                                <div class="type-header">
+                                    <i class="fas fa-paperclip"></i>
+                                    <h4>File Attachments</h4>
+                                </div>
+                                <div class="type-content">
+                                    <p>Send files, images, and documents with your messages</p>
+                                    <div class="file-types">
+                                        <span class="file-type">Images</span>
+                                        <span class="file-type">Documents</span>
+                                        <span class="file-type">Videos</span>
+                                        <span class="file-type">Audio</span>
+                                    </div>
+                                    <ul class="features">
+                                        <li>Multiple files</li>
+                                        <li>Drag & drop</li>
+                                        <li>25MB limit per file</li>
+                                        <li>Preview support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embed Builder Guide -->
+                    <div class="guide-section">
+                        <h3><i class="fas fa-paint-brush"></i> Embed Builder Guide</h3>
+                        <p>Create stunning embeds with our visual editor</p>
+                        
+                        <div class="embed-builder-guide">
+                            <div class="builder-steps">
+                                <div class="builder-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Choose Colors</h4>
+                                        <p>Select from preset colors or use custom hex codes for branding</p>
+                                    </div>
+                                </div>
+                                <div class="builder-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-heading"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Add Content</h4>
+                                        <p>Set title, description, and other text elements</p>
+                                    </div>
+                                </div>
+                                <div class="builder-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Include Media</h4>
+                                        <p>Add images, thumbnails, and author icons</p>
+                                    </div>
+                                </div>
+                                <div class="builder-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-table"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Organize Fields</h4>
+                                        <p>Structure information with inline and block fields</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Best Practices -->
+                    <div class="guide-section">
+                        <h3><i class="fas fa-star"></i> Best Practices</h3>
+                        <p>Tips for effective webhook usage and professional results</p>
+                        
+                        <div class="best-practices-grid">
+                            <div class="practice-card">
+                                <div class="practice-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Rate Limiting</h4>
+                                <p>Respect Discord's rate limits to avoid being blocked</p>
+                                <ul>
+                                    <li>Max 5 messages per 5 seconds</li>
+                                    <li>Use delays for bulk sending</li>
+                                    <li>Monitor for rate limit responses</li>
+                                </ul>
+                            </div>
+
+                            <div class="practice-card">
+                                <div class="practice-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Security</h4>
+                                <p>Keep your tokens and webhooks secure</p>
+                                <ul>
+                                    <li>Never share your user token</li>
+                                    <li>Use environment variables</li>
+                                    <li>Regular token rotation</li>
+                                </ul>
+                            </div>
+
+                            <div class="practice-card">
+                                <div class="practice-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4>User Experience</h4>
+                                <p>Create engaging and readable messages</p>
+                                <ul>
+                                    <li>Use consistent branding</li>
+                                    <li>Keep content concise</li>
+                                    <li>Include relevant information only</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="usage-guide" class="docs-section">
+        <div class="container">
+            <h2 class="section-title">📖 Complete Usage Guide</h2>
+            <div class="docs-content">
+                <div class="usage-sections">
+                    <div class="usage-section">
+                        <h3>🔧 Initial Configuration</h3>
+                        <div class="config-steps">
+                            <h4>Discord Token Setup:</h4>
+                            <ol>
+                                <li>Open the application and navigate to the <strong>Settings</strong> tab</li>
+                                <li>Enter your Discord token in the "User Token" field</li>
+                                <li>The token field is hidden by default - click the eye icon to view/hide it</li>
+                                <li>Click "💾 Save Settings" to persist your configuration</li>
+                            </ol>
+                            <div class="warning">
+                                <strong>⚠️ Security Warning:</strong> Never share your Discord token with anyone. Keep it private and secure.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-section">
+                        <h3>📝 Message Types</h3>
+                        <div class="message-types">
+                            <div class="message-type">
+                                <h4>💬 Text Messages</h4>
+                                <ul>
+                                    <li>Select "📝 Text Message" from the message type options</li>
+                                    <li>Enter your Channel ID in the configuration section</li>
+                                    <li>Type your message in the content area</li>
+                                    <li>Optionally enable "@everyone" tagging</li>
+                                    <li>Click "🚀 Send Message" to deliver</li>
+                                </ul>
+                                <div class="tip">
+                                    <strong>💡 Best for:</strong> Simple notifications, alerts, and basic communication
+                                </div>
+                            </div>
+
+                            <div class="message-type">
+                                <h4>📋 Rich Embeds (Recommended)</h4>
+                                <ul>
+                                    <li>Select "📋 Rich Embed" from the message type options</li>
+                                    <li>Create or select a webhook from the dropdown</li>
+                                    <li>Customize the embed title and color (hex format)</li>
+                                    <li>Add your message content in the description area</li>
+                                    <li>Send via webhook for professional appearance</li>
+                                </ul>
+                                <div class="tip">
+                                    <strong>💡 Best for:</strong> Professional notifications, status updates, and branded messages
+                                </div>
+                            </div>
+
+                            <div class="message-type">
+                                <h4>📎 File Attachments</h4>
+                                <ul>
+                                    <li>Select "📎 File Attachment" from the message type options</li>
+                                    <li>The tool will attach configuration files automatically</li>
+                                    <li>Add a descriptive message to accompany the files</li>
+                                    <li>Perfect for sharing settings or configuration data</li>
+                                </ul>
+                                <div class="tip">
+                                    <strong>💡 Best for:</strong> Sharing configurations, logs, or settings files
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-section">
+                        <h3>🔗 Webhook Management</h3>
+                        <div class="webhook-guide">
+                            <h4>Creating Webhooks:</h4>
+                            <ol>
+                                <li><strong>Direct Creation:</strong>
+                                    <ul>
+                                        <li>Enter your Discord token and target channel ID</li>
+                                        <li>Click "Create Webhook" button</li>
+                                        <li>Webhook is automatically created with a timestamp name</li>
+                                        <li>It appears in your webhook dropdown immediately</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Import Existing:</strong>
+                                    <ul>
+                                        <li>Place your webhook URL in a <code>webhook.txt</code> file</li>
+                                        <li>The application imports it automatically on startup</li>
+                                        <li>Imported webhooks appear as "Imported Webhook"</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <h4>Using Webhooks:</h4>
+                            <ul>
+                                <li>Select your webhook from the dropdown menu</li>
+                                <li>Only available when "Rich Embed" message type is selected</li>
+                                <li>Webhooks provide better formatting and custom avatars</li>
+                                <li>Multiple webhooks can be managed simultaneously</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="usage-section">
+                        <h3>🎨 Customization Options</h3>
+                        <div class="customization-guide">
+                            <h4>Themes:</h4>
+                            <ul>
+                                <li><strong>Dark Theme:</strong> Modern dark interface, easy on the eyes</li>
+                                <li><strong>Light Theme:</strong> Clean light interface for bright environments</li>
+                                <li>Switch themes in the Settings tab</li>
+                                <li>Theme preference is saved automatically</li>
+                            </ul>
+                            <h4>Embed Customization:</h4>
+                            <ul>
+                                <li><strong>Title:</strong> Custom embed title (e.g., "Server Status Update")</li>
+                                <li><strong>Color:</strong> Hex color codes (e.g., #5865F2 for Discord purple)</li>
+                                <li><strong>Description:</strong> Main message content with rich formatting</li>
+                                <li><strong>Timestamp:</strong> Automatically added to all embeds</li>
+                            </ul>
+                            <h4>Auto-Save Features:</h4>
+                            <ul>
+                                <li>Enable in Settings to save messages between sessions</li>
+                                <li>Channel IDs and tokens are remembered</li>
+                                <li>Message templates are preserved</li>
+                                <li>Webhook selections are maintained</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="docs-section">
+        <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            <div class="docs-content">
+                <div class="faq-grid">
+                    <div class="faq-category">
+                        <h3>🚀 Getting Started</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Do I need to install anything to use the executable?</div>
+                            <div class="faq-answer">A: No! The executable is completely portable. Just download and run it. All dependencies are included.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Where do I get a Discord token?</div>
+                            <div class="faq-answer">A: Open Discord in your browser, press F12, go to Application → Local Storage → discord.com, and copy the "token" value (remove the quotes).</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: How do I find a Channel ID?</div>
+                            <div class="faq-answer">A: Enable Developer Mode in Discord settings, right-click any channel, and select "Copy ID". The Channel ID is a long number.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Can I use this tool on Mac or Linux?</div>
+                            <div class="faq-answer">A: Yes! While the pre-built executable is for Windows, you can run the source code on any platform with Python 3.7+.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>🔧 Technical Issues</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Why am I getting "Authentication failed"?</div>
+                            <div class="faq-answer">A: This usually means your Discord token is incorrect or expired. Get a fresh token from Discord and update it in Settings.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: The webhook creation fails. What's wrong?</div>
+                            <div class="faq-answer">A: Ensure you have "Manage Webhooks" permission in the target channel. Server administrators or channel moderators typically have this permission.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Messages aren't sending. How do I fix this?</div>
+                            <div class="faq-answer">A: Check your internet connection, verify the Channel ID is correct, and ensure you have permission to send messages in that channel.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Q: Windows blocks the executable. Is it safe?</div>
+                            <div class="faq-answer">A: Yes, it's completely safe. Windows may show warnings for unsigned executables. Click "More info" then "Run anyway" to proceed.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>💬 Usage Questions</h3>
+                        <div class="faq-item">
+    <!-- API Reference -->
+    <section id="api-reference" class="docs-section">
+        <div class="container">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <div class="docs-breadcrumb">
+                        <span>Documentation</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>API Reference</span>
+                    </div>
+                    <h2 class="docs-title">
+                        <i class="fas fa-code"></i>
+                        API Reference
+                    </h2>
+                    <p class="docs-subtitle">Technical documentation for developers and integrations</p>
+                </div>
+
+                <div class="api-sections">
+                    <!-- Webhook API -->
+                    <div class="api-section">
+                        <h3><i class="fas fa-link"></i> Webhook API</h3>
+                        <p>Understanding Discord's webhook endpoints and parameters</p>
+                        
+                        <div class="api-endpoint">
+                            <div class="endpoint-header">
+                                <span class="method post">POST</span>
+                                <code>https://discord.com/api/webhooks/{webhook.id}/{webhook.token}</code>
+                            </div>
+                            <div class="endpoint-description">
+                                <p>Execute a webhook to send messages or embeds to a Discord channel</p>
+                            </div>
+                            
+                            <div class="api-params">
+                                <h4>Parameters</h4>
+                                <div class="param-table">
+                                    <div class="param-row">
+                                        <div class="param-name">content</div>
+                                        <div class="param-type">string</div>
+                                        <div class="param-desc">Message content (up to 2000 characters)</div>
+                                    </div>
+                                    <div class="param-row">
+                                        <div class="param-name">embeds</div>
+                                        <div class="param-type">array</div>
+                                        <div class="param-desc">Array of embed objects (up to 10 embeds)</div>
+                                    </div>
+                                    <div class="param-row">
+                                        <div class="param-name">username</div>
+                                        <div class="param-type">string</div>
+                                        <div class="param-desc">Override the default webhook username</div>
+                                    </div>
+                                    <div class="param-row">
+                                        <div class="param-name">avatar_url</div>
+                                        <div class="param-type">string</div>
+                                        <div class="param-desc">Override the default webhook avatar</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embed Structure -->
+                    <div class="api-section">
+                        <h3><i class="fas fa-layer-group"></i> Embed Structure</h3>
+                        <p>Complete embed object specification for rich messages</p>
+                        
+                        <div class="code-example">
+                            <div class="code-header">
+                                <span>Embed Object Structure</span>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-content">
+<pre><code>{
+  "title": "Embed Title",
+  "description": "Embed description text",
+  "color": 5814783,
+  "timestamp": "2024-01-01T00:00:00.000Z",
+  "url": "https://example.com",
+  "author": {
+    "name": "Author Name",
+    "url": "https://example.com",
+    "icon_url": "https://example.com/icon.png"
+  },
+  "thumbnail": {
+    "url": "https://example.com/thumbnail.png"
+  },
+  "image": {
+    "url": "https://example.com/image.png"
+  },
+  "footer": {
+    "text": "Footer text",
+    "icon_url": "https://example.com/footer-icon.png"
+  },
+  "fields": [
+    {
+      "name": "Field Name",
+      "value": "Field Value",
+      "inline": true
+    }
+  ]
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rate Limits -->
+                    <div class="api-section">
+                        <h3><i class="fas fa-tachometer-alt"></i> Rate Limits</h3>
+                        <p>Understanding Discord's API rate limiting</p>
+                        
+                        <div class="rate-limits-grid">
+                            <div class="rate-limit-card">
+                                <h4>Webhook Execution</h4>
+                                <div class="limit-value">5 requests</div>
+                                <div class="limit-duration">per 5 seconds</div>
+                                <p>Per webhook URL</p>
+                            </div>
+                            <div class="rate-limit-card">
+                                <h4>Message Content</h4>
+                                <div class="limit-value">2000 chars</div>
+                                <div class="limit-duration">per message</div>
+                                <p>Content field limit</p>
+                            </div>
+                            <div class="rate-limit-card">
+                                <h4>Embed Limits</h4>
+                                <div class="limit-value">10 embeds</div>
+                                <div class="limit-duration">per message</div>
+                                <p>Maximum embed count</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Codes -->
+                    <div class="api-section">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Error Codes</h3>
+                        <p>Common error responses and their meanings</p>
+                        
+                        <div class="error-codes">
+                            <div class="error-code">
+                                <div class="error-status">400</div>
+                                <div class="error-details">
+                                    <h4>Bad Request</h4>
+                                    <p>Invalid request body or parameters</p>
+                                </div>
+                            </div>
+                            <div class="error-code">
+                                <div class="error-status">401</div>
+                                <div class="error-details">
+                                    <h4>Unauthorized</h4>
+                                    <p>Invalid webhook token or permissions</p>
+                                </div>
+                            </div>
+                            <div class="error-code">
+                                <div class="error-status">404</div>
+                                <div class="error-details">
+                                    <h4>Not Found</h4>
+                                    <p>Webhook or channel doesn't exist</p>
+                                </div>
+                            </div>
+                            <div class="error-code">
+                                <div class="error-status">429</div>
+                                <div class="error-details">
+                                    <h4>Too Many Requests</h4>
+                                    <p>Rate limit exceeded, retry after delay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="docs-section">
+        <div class="container">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <div class="docs-breadcrumb">
+                        <span>Documentation</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Troubleshooting</span>
+                    </div>
+                    <h2 class="docs-title">
+                        <i class="fas fa-tools"></i>
+                        Troubleshooting Guide
+                    </h2>
+                    <p class="docs-subtitle">Common issues and their solutions</p>
+                </div>
+
+                <div class="troubleshooting-categories">
+                    <!-- Connection Issues -->
+                    <div class="trouble-category">
+                        <div class="category-header">
+                            <i class="fas fa-wifi"></i>
+                            <h3>Connection Issues</h3>
+                        </div>
+                        
+                        <div class="trouble-items">
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <h4>"No token configured" error</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Navigate to the Settings tab</li>
+                                        <li>Enter your Discord token in the "User Token" field</li>
+                                        <li>Click "Save Settings" to persist the configuration</li>
+                                        <li>Return to Discord Messages tab and click "Refresh"</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-ban"></i>
+                                    <h4>"Authentication failed" status</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Get a fresh Discord token from your browser</li>
+                                        <li>Ensure you copied the entire token without extra characters</li>
+                                        <li>Remove any quotes or spaces from the token</li>
+                                        <li>Save and test the connection again</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-times-circle"></i>
+                                    <h4>"Connection failed" error</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Check your internet connection</li>
+                                        <li>Verify Discord is accessible in your browser</li>
+                                        <li>Try disabling VPN or proxy temporarily</li>
+                                        <li>Check Windows Firewall settings</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application Issues -->
+                    <div class="trouble-category">
+                        <div class="category-header">
+                            <i class="fas fa-desktop"></i>
+                            <h3>Application Issues</h3>
+                        </div>
+                        
+                        <div class="trouble-items">
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-window-close"></i>
+                                    <h4>Application won't start</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Ensure you're running on Windows 10/11 64-bit</li>
+                                        <li>Run as administrator if needed</li>
+                                        <li>Check antivirus software isn't blocking the file</li>
+                                        <li>Re-download the executable if corrupted</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-cog"></i>
+                                    <h4>Settings not saving</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Run the application as administrator</li>
+                                        <li>Check folder permissions in the application directory</li>
+                                        <li>Ensure the folder isn't read-only</li>
+                                        <li>Move to a different folder if necessary</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message Issues -->
+                    <div class="trouble-category">
+                        <div class="category-header">
+                            <i class="fas fa-comment"></i>
+                            <h3>Message Issues</h3>
+                        </div>
+                        
+                        <div class="trouble-items">
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-palette"></i>
+                                    <h4>Embed colors not working</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Use valid hex color codes (e.g., #FF0000)</li>
+                                        <li>Include the # symbol before the color code</li>
+                                        <li>Check that the color code is 6 characters long</li>
+                                        <li>Use online color pickers for valid codes</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="trouble-item">
+                                <div class="problem">
+                                    <i class="fas fa-clock"></i>
+                                    <h4>Rate limit exceeded</h4>
+                                </div>
+                                <div class="solution">
+                                    <h5>Solution:</h5>
+                                    <ol>
+                                        <li>Wait for the rate limit to reset (usually 5 seconds)</li>
+                                        <li>Reduce the frequency of messages</li>
+                                        <li>Implement delays between bulk sends</li>
+                                        <li>Consider using multiple webhooks for higher volume</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-section">
+                    <div class="help-card">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Still Need Help?</h3>
+                        <p>If you can't find a solution to your problem, we're here to help!</p>
+                        <div class="help-actions">
+                            <a href="support.html" class="btn btn-primary">Contact Support</a>
+                            <a href="https://github.com/driizzyy/Webhook-Creator/issues" target="_blank" class="btn btn-secondary">Report Bug</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                                    <li>Check if your firewall is blocking the application</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-category">
+                        <h3>💬 Message Sending Issues</h3>
+                        <div class="trouble-item">
+                            <h4>Problem: Messages not appearing in Discord</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Verify the Channel ID is correct (long number)</li>
+                                    <li>Ensure you have permission to send messages in that channel</li>
+                                    <li>Check if the channel exists and you have access to it</li>
+                                    <li>Try sending a simple text message first</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="trouble-item">
+                            <h4>Problem: Webhook creation fails</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Ensure you have "Manage Webhooks" permission</li>
+                                    <li>Check that the channel allows webhook creation</li>
+                                    <li>Try creating the webhook manually in Discord first</li>
+                                    <li>Verify your token has the necessary permissions</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="trouble-item">
+                            <h4>Problem: Embed colors not working</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Use valid hex color format: #RRGGBB (e.g., #FF0000)</li>
+                                    <li>Include the # symbol at the beginning</li>
+                                    <li>Use 6 characters for the color code</li>
+                                    <li>Try common colors like #5865F2 (Discord purple)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-category">
+                        <h3>💻 Application Issues</h3>
+                        <div class="trouble-item">
+                            <h4>Problem: Application won't start</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Check if Windows blocked the executable</li>
+                                    <li>Right-click the .exe → Properties → Unblock</li>
+                                    <li>Run as administrator if needed</li>
+                                    <li>Ensure you have sufficient disk space</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="trouble-item">
+                            <h4>Problem: Settings not saving</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Ensure the application has write permissions</li>
+                                    <li>Check if your antivirus is blocking file writes</li>
+                                    <li>Try running the application as administrator</li>
+                                    <li>Verify you have sufficient disk space</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="trouble-item">
+                            <h4>Problem: GUI appears broken or unresponsive</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Try switching themes in the Settings tab</li>
+                                    <li>Restart the application</li>
+                                    <li>Check if Windows display scaling is causing issues</li>
+                                    <li>Update your graphics drivers</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-category">
+                        <h3>🐍 Python Source Issues</h3>
+                        <div class="trouble-item">
+                            <h4>Problem: Import errors when running from source</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Ensure Python 3.7+ is installed</li>
+                                    <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+                                    <li>Try using a virtual environment</li>
+                                    <li>Update pip to the latest version</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="trouble-item">
+                            <h4>Problem: PyInstaller build fails</h4>
+                            <div class="solution">
+                                <strong>Solution:</strong>
+                                <ol>
+                                    <li>Install PyInstaller: <code>pip install pyinstaller</code></li>
+                                    <li>Use the provided spec file: <code>pyinstaller discord_tool.spec</code></li>
+                                    <li>Check for any missing dependencies</li>
+                                    <li>Try building in a clean virtual environment</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features -->
+    <section id="advanced" class="docs-section">
+        <div class="container">
+            <h2 class="section-title">⚡ Advanced Features</h2>
+            <div class="docs-content">
+                <div class="advanced-grid">
+                    <div class="advanced-card">
+                        <h3>🔧 Configuration Files</h3>
+                        <p>Understanding the tool's configuration system:</p>
+                        <ul>
+                            <li><strong>config.json</strong>: Main application settings, token, and preferences</li>
+                            <li><strong>webhooks.json</strong>: Stored webhooks with names and URLs</li>
+                            <li><strong>gui_settings.json</strong>: UI preferences and last-used values</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Example config.json structure:</h4>
+                            <div class="code-block">
+                                <code>
+{<br>
+  &nbsp;"token": "your-discord-token",<br>
+  &nbsp;"theme": "Dark",<br>
+  &nbsp;"auto_save": true<br>
+}
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-card">
+                        <h3>🎨 Custom Embed Colors</h3>
+                        <p>Professional color codes for your embeds:</p>
+                        <div class="color-palette">
+                            <div class="color-item">
+                                <div class="color-preview" style="background-color: #5865F2;"></div>
+                                <div class="color-info">
+                                    <strong>Discord Purple</strong><br>
+                                    <code>#5865F2</code>
+                                </div>
+                            </div>
+                            <div class="color-item">
+                                <div class="color-preview" style="background-color: #57F287;"></div>
+                                <div class="color-info">
+                                    <strong>Success Green</strong><br>
+                                    <code>#57F287</code>
+                                </div>
+                            </div>
+                            <div class="color-item">
+                                <div class="color-preview" style="background-color: #FEE75C;"></div>
+                                <div class="color-info">
+                                    <strong>Warning Yellow</strong><br>
+                                    <code>#FEE75C</code>
+                                </div>
+                            </div>
+                            <div class="color-item">
+                                <div class="color-preview" style="background-color: #ED4245;"></div>
+                                <div class="color-info">
+                                    <strong>Error Red</strong><br>
+                                    <code>#ED4245</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-card">
+                        <h3>📊 Performance Tips</h3>
+                        <p>Optimize your Discord Webhook Creator Pro experience:</p>
+                        <ul>
+                            <li><strong>Batch Operations</strong>: Prepare multiple messages before sending</li>
+                            <li><strong>Connection Reuse</strong>: The tool automatically reuses connections for efficiency</li>
+                            <li><strong>Memory Management</strong>: Large attachments are streamed, not loaded into memory</li>
+                            <li><strong>Rate Limiting</strong>: Built-in protection prevents API abuse</li>
+                        </ul>
+                    </div>
+
+                    <div class="advanced-card">
+                        <h3>🔐 Security Best Practices</h3>
+                        <p>Keep your Discord integration secure:</p>
+                        <ul>
+                            <li><strong>Token Protection</strong>: Never share your Discord token publicly</li>
+                            <li><strong>Permission Scoping</strong>: Only use accounts with necessary permissions</li>
+                            <li><strong>Regular Updates</strong>: Keep the tool updated for security patches</li>
+                            <li><strong>Secure Storage</strong>: Configuration files contain sensitive data</li>
+                        </ul>
+                    </div>
+
+                    <div class="advanced-card">
+                        <h3>🚀 Power User Tips</h3>
+                        <p>Get the most out of Discord Webhook Creator Pro:</p>
+                        <ul>
+                            <li><strong>Message Templates</strong>: Use auto-save to create reusable message templates</li>
+                            <li><strong>Multiple Webhooks</strong>: Create webhooks for different purposes and channels</li>
+                            <li><strong>Embed Formatting</strong>: Use Discord markdown in embed descriptions</li>
+                            <li><strong>Backup Strategy</strong>: Regularly backup your configuration files</li>
+                        </ul>
+                    </div>
+
+                    <div class="advanced-card">
+                        <h3>🔄 Update Management</h3>
+                        <p>Stay current with the latest features:</p>
+                        <ul>
+                            <li><strong>Built-in Checker</strong>: Use the Updates tab to check for new versions</li>
+                            <li><strong>GitHub Releases</strong>: Follow our repository for release notifications</li>
+                            <li><strong>Automatic Notifications</strong>: The tool will notify you of available updates</li>
+                            <li><strong>Migration Support</strong>: Settings are preserved during updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2 class="section-title">📥 Download Discord Webhook Creator Pro</h2>
+            <div class="download-content">
+                <div class="download-options">
+                    <div class="download-card primary">
+                        <div class="download-icon">💻</div>
+                        <h3>Windows Executable</h3>
+                        <p>Ready-to-run executable for Windows 10/11. No installation required!</p>
+                        <div class="download-info">
+                            <span class="file-size">~14MB</span>
+                            <span class="compatibility">Windows 10/11</span>
+                        </div>
+                        <a href="https://github.com/driizzyy/Webhook-Creator/releases/latest" class="download-btn" target="_blank">
+                            📥 Download .exe
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">🐍</div>
+                        <h3>Source Code</h3>
+                        <p>Full source code for developers and advanced users. Cross-platform support.</p>
+                        <div class="download-info">
+                            <span class="file-size">~2MB</span>
+                            <span class="compatibility">Any OS</span>
+                        </div>
+                        <a href="https://github.com/driizzyy/Webhook-Creator" class="download-btn secondary" target="_blank">
+                            📂 View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="download-stats" id="github-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="download-count">-</span>
+                        <span class="stat-label">Total Downloads</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="star-count">-</span>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="release-version">-</span>
+                        <span class="stat-label">Latest Version</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>Discord Webhook Creator Pro</span>
+                    </div>
+                    <p>Professional Discord webhook management system with rich embed creator and modern GUI interface.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/driizzyy/Webhook-Creator" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#status">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 driizzyy. All rights reserved. Made with ❤️ for the Discord community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/docs.js"></script>
+</body>
+</html>
