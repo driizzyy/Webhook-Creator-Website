@@ -1,0 +1,56 @@
+{
+  "discord": {
+    "server": {
+      "id": "1402945206516715612",
+      "name": "Discord Webhook Creator Pro",
+      "description": "Official Discord server for Discord Webhook Creator Pro community"
+    },
+    "widget": {
+      "enabled": true,
+      "theme": "dark",
+      "defaultWidth": 350,
+      "defaultHeight": 500,
+      "updateInterval": 30000,
+      "cacheTimeout": 60000
+    },
+    "api": {
+      "baseUrl": "https://discord.com/api",
+      "widgetEndpoint": "/guilds/{serverId}/widget.json",
+      "widgetUrl": "https://discord.com/widget?id={serverId}&theme={theme}",
+      "timeout": 5000
+    },
+    "features": {
+      "showMemberCount": true,
+      "showOnlineCount": true,
+      "showVoiceChannels": true,
+      "showMemberPreview": true,
+      "animateCounters": true,
+      "autoRefresh": true
+    },
+    "fallback": {
+      "memberCount": 1250,
+      "onlineCount": 500,
+      "voiceActive": 25,
+      "inviteCode": "https://discord.gg/zwBeRaes4G"
+    },
+    "branding": {
+      "colors": {
+        "blurple": "#5865f2",
+        "green": "#57f287",
+        "yellow": "#fee75c",
+        "fuchsia": "#eb459e",
+        "red": "#ed4245",
+        "white": "#ffffff",
+        "black": "#23272a",
+        "dark": "#2c2f33",
+        "darker": "#23272a"
+      }
+    }
+  },
+  "website": {
+    "name": "Discord Webhook Creator Pro",
+    "version": "2.0.0",
+    "author": "driizzyy",
+    "repository": "https://github.com/driizzyy/Webhook-Creator"
+  }
+}

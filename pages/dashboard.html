@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Professional dashboard for Discord webhook management and embed creation.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/discord-widget.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <a href="auth.html" class="nav-link auth-btn">Profile</a>
+                <a href="#" class="nav-link download-btn" onclick="logout()">Logout</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+            <h1 class="dashboard-welcome">Welcome to Your Dashboard</h1>
+            <p class="dashboard-subtitle">Manage your Discord webhooks and create professional embeds with ease</p>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Quick Stats -->
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="dashboard-card-title">Active Webhooks</h3>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <p>You have <strong>3 active webhooks</strong> configured and ready to use. Manage your webhook URLs, customize settings, and monitor usage statistics.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#webhooks" class="btn btn-primary">
+                                <i class="fas fa-cog"></i>
+                                Manage Webhooks
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="dashboard-card-title">Embed Creator</h3>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <p>Create beautiful rich embeds with custom colors, fields, images, and timestamps. Perfect for announcements, notifications, and professional messages.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#embed-creator" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                Create Embed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3 class="dashboard-card-title">Message History</h3>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <p>View your recent webhook messages and embed history. Track delivery status, edit previous messages, and reuse successful templates.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#history" class="btn btn-secondary">
+                                <i class="fas fa-history"></i>
+                                View History
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="dashboard-card-title">Analytics</h3>
+                    </div>
+                    <div class="dashboard-card-content">
+                        <p>Monitor your webhook usage, message delivery rates, and engagement statistics. Optimize your Discord communication strategy.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#analytics" class="btn btn-secondary">
+                                <i class="fas fa-chart-line"></i>
+                                View Analytics
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="content-wrapper">
+                <h2>Quick Actions</h2>
+                <p class="lead">Get started with common tasks and workflows</p>
+                
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-rocket"></i>
+                                Quick Send
+                            </h3>
+                            <p class="card-subtitle">Send a message instantly to your configured webhook</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label">Select Webhook</label>
+                                <select class="form-input">
+                                    <option>General Announcements</option>
+                                    <option>Support Tickets</option>
+                                    <option>Development Updates</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message Content</label>
+                                <textarea class="form-input" rows="3" placeholder="Enter your message..."></textarea>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-send"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-template"></i>
+                                Templates
+                            </h3>
+                            <p class="card-subtitle">Use pre-made templates for common message types</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="template-grid" style="display: grid; gap: 1rem;">
+                                <button class="btn btn-outline" onclick="loadTemplate('announcement')">
+                                    <i class="fas fa-bullhorn"></i>
+                                    Announcement
+                                </button>
+                                <button class="btn btn-outline" onclick="loadTemplate('update')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Update Notice
+                                </button>
+                                <button class="btn btn-outline" onclick="loadTemplate('welcome')">
+                                    <i class="fas fa-hand-wave"></i>
+                                    Welcome Message
+                                </button>
+                                <button class="btn btn-outline" onclick="loadTemplate('maintenance')">
+                                    <i class="fas fa-tools"></i>
+                                    Maintenance Alert
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#templates" class="btn btn-secondary">
+                                <i class="fas fa-plus"></i>
+                                Create Template
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="content-wrapper">
+                <h2>Recent Activity</h2>
+                <p class="lead">Your latest webhook messages and embed creations</p>
+                
+                <div class="activity-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="activity-item" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-default);">
+                        <div style="width: 40px; height: 40px; background: var(--success-color); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--dark-color);">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0 0 0.25rem 0; color: var(--text-primary);">Welcome embed sent successfully</h4>
+                            <p style="margin: 0; color: var(--text-secondary); font-size: var(--font-size-sm);">Sent to #general • 2 minutes ago</p>
+                        </div>
+                        <button class="btn btn-sm btn-secondary">
+                            <i class="fas fa-eye"></i>
+                            View
+                        </button>
+                    </div>
+
+                    <div class="activity-item" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-default);">
+                        <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--light-color);">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0 0 0.25rem 0; color: var(--text-primary);">New embed template created</h4>
+                            <p style="margin: 0; color: var(--text-secondary); font-size: var(--font-size-sm);">Announcement Template • 15 minutes ago</p>
+                        </div>
+                        <button class="btn btn-sm btn-secondary">
+                            <i class="fas fa-edit"></i>
+                            Edit
+                        </button>
+                    </div>
+
+                    <div class="activity-item" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-default);">
+                        <div style="width: 40px; height: 40px; background: var(--warning-color); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--dark-color);">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0 0 0.25rem 0; color: var(--text-primary);">Webhook configuration updated</h4>
+                            <p style="margin: 0; color: var(--text-secondary); font-size: var(--font-size-sm);">Support Tickets webhook • 1 hour ago</p>
+                        </div>
+                        <button class="btn btn-sm btn-secondary">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help & Support -->
+            <div class="content-wrapper">
+                <h2>Need Help?</h2>
+                <p class="lead">Get assistance and learn more about Discord Webhook Creator Pro</p>
+                
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-book"></i>
+                                Documentation
+                            </h3>
+                            <p class="card-subtitle">Complete guides and API references</p>
+                        </div>
+                        <div class="card-body">
+                            <p>Access comprehensive documentation, tutorials, and examples to make the most of your webhook tools.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="docs.html" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Docs
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fab fa-discord"></i>
+                                Discord Support
+                            </h3>
+                            <p class="card-subtitle">Join our community server</p>
+                        </div>
+                        <div class="card-body">
+                            <p>Get real-time help from our community and development team on our Discord server.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://discord.gg/zwBeRaes4G" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-discord"></i>
+                                Join Server
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Dashboard functionality
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('userToken');
+                window.location.href = 'auth.html';
+            }
+        }
+
+        function loadTemplate(type) {
+            alert(`Loading ${type} template...`);
+            // Implementation would load the selected template
+        }
+
+        // Mobile menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            const userToken = localStorage.getItem('userToken');
+            if (!userToken) {
+                window.location.href = 'auth.html';
+            }
+        });
+    </script>
+</body>
+</html>

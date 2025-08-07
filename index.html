@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Creator Pro - by driizzyy</title>
+    <meta name="description" content="Professional Discord webhook management system with rich embed creator and modern GUI interface.">
+    <meta name="keywords" content="Discord, Webhook, Embed Creator, Discord Tool, driizzyy, Professional">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/discord-widget.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="pages/features.html" class="nav-link">Features</a>
+                <a href="pages/tutorials.html" class="nav-link">Tutorials</a>
+                <a href="pages/docs.html" class="nav-link">Documentation</a>
+                <a href="pages/examples.html" class="nav-link">Examples</a>
+                <a href="pages/support.html" class="nav-link">Support</a>
+                <a href="pages/changelog.html" class="nav-link">Changelog</a>
+                <a href="pages/auth.html" class="nav-link auth-btn">Sign In</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Professional Discord Tool</span>
+                </div>
+                <h1 class="hero-title">
+                    Discord Webhook Creator
+                    <span class="highlight">Pro</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Advanced webhook management system with professional embed creator and 
+                    modern GUI interface. Fully compliant with Discord's Terms of Service.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/driizzyy/Webhook-Creator/releases/latest" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="features.html" class="btn btn-secondary">
+                        <i class="fas fa-star"></i>
+                        Features
+                    </a>
+                    <a href="docs.html" class="btn btn-secondary">
+                        <i class="fas fa-book"></i>
+                        Documentation
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">v2.0</span>
+                        <span class="stat-label">Latest Version</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="app-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="mockup-title">Discord Webhook Creator Pro v2.0</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active">📨 Discord Messages</div>
+                            <div class="sidebar-item">⚙️ Settings</div>
+                            <div class="sidebar-item">🔄 Updates</div>
+                            <div class="sidebar-item">👤 Credits</div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="embed-preview">
+                                <div class="embed-header">Rich Embed Creator</div>
+                                <div class="embed-body">
+                                    <div class="embed-title">Professional Discord Tool</div>
+                                    <div class="embed-description">Create beautiful embeds with webhooks</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for professional Discord webhook management</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Webhook Management</h3>
+                    <p>Create, manage, and organize multiple Discord webhooks with an intuitive interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Rich Embed Creator</h3>
+                    <p>Design beautiful embeds with custom titles, colors, descriptions, and timestamps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Multiple Message Types</h3>
+                    <p>Send text messages, rich embeds, and file attachments with professional formatting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Discord ToS Compliant</h3>
+                    <p>Uses official webhook API instead of selfbot functionality for full compliance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Modern GUI Interface</h3>
+                    <p>Professional interface with dark/light themes and responsive design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-save"></i>
+                    </div>
+                    <h3>Auto-Save Functionality</h3>
+                    <p>Automatically save your settings, messages, and webhook configurations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Works seamlessly on Windows and Linux with native system integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">💬 Join Our Community</h2>
+                <p>Connect with other Discord webhook creators, get support, and stay updated with the latest features</p>
+            </div>
+            
+            <div class="community-content">
+                <div class="community-info">
+                    <div class="community-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <div class="stat-content">
+                                <span class="stat-number" data-discord-members data-target="1250">0</span>
+                                <span class="stat-label">Total Members</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-circle"></i>
+                            <div class="stat-content">
+                                <span class="stat-number" data-discord-online data-target="500">0</span>
+                                <span class="stat-label">Online Now</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-headphones"></i>
+                            <div class="stat-content">
+                                <span class="stat-number" data-target="25">0</span>
+                                <span class="stat-label">Voice Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-features">
+                        <h3>🚀 What You'll Get:</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Real-time support from the community</li>
+                            <li><i class="fas fa-check"></i> Share your webhook creations and get feedback</li>
+                            <li><i class="fas fa-check"></i> Early access to new features and updates</li>
+                            <li><i class="fas fa-check"></i> Weekly tips and tricks for Discord automation</li>
+                            <li><i class="fas fa-check"></i> Direct access to the developer (driizzyy)</li>
+                        </ul>
+                        
+                        <div class="community-cta">
+                            <a href="https://discord.gg/YOUR_INVITE_CODE" class="btn btn-primary" target="_blank" data-discord-invite>
+                                <i class="fab fa-discord"></i>
+                                Join Discord Server
+                            </a>
+                            <button onclick="refreshDiscordWidget()" class="btn btn-secondary" style="margin-top: 8px;">
+                                <i class="fas fa-sync-alt"></i>
+                                Refresh Widget
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="discord-widget-container">
+                    <div class="widget-header">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-discord"></i>
+                            <span data-discord-name>Live Server Widget</span>
+                        </div>
+                        <div class="widget-status">
+                            <div class="status-dot"></div>
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Discord Server Widget with Enhanced Features -->
+                    <div class="discord-widget-enhanced">
+                        <div class="widget-main">
+                            <div class="discord-widget">
+                                <iframe src="https://discord.com/widget?id=1402945206516715612&theme=dark" 
+                                        width="350" 
+                                        height="500" 
+                                        allowtransparency="true" 
+                                        frameborder="0" 
+                                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                                        title="Discord Server Widget">
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="widget-sidebar">
+                            <div class="widget-section">
+                                <h4>📊 Live Stats</h4>
+                                <div class="mini-stats">
+                                    <div class="mini-stat">
+                                        <span class="mini-stat-number" data-discord-online>...</span>
+                                        <span class="mini-stat-label">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="widget-section">
+                                <h4>👥 Recent Members</h4>
+                                <div class="discord-member-preview">
+                                    <div class="discord-widget-loading">
+                                        <div class="loading-spinner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="widget-section">
+                                <h4>🔊 Voice Channels</h4>
+                                <div class="discord-voice-channels">
+                                    <div class="discord-widget-loading">
+                                        <div class="loading-spinner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="widget-footer">
+                        <p>
+                            <strong>API Endpoint:</strong> 
+                            <code>https://discord.com/api/guilds/1402945206516715612/widget.json</code>
+                        </p>
+                        <p>Can't see the widget? <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" data-discord-invite>Click here to join directly</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section class="documentation-callout">
+        <div class="container">
+            <div class="callout-content">
+                <div class="callout-text">
+                    <h2>📚 Need Help Getting Started?</h2>
+                    <p>Our comprehensive documentation covers everything from basic setup to advanced features. Get step-by-step guides, troubleshooting tips, and FAQs all in one place.</p>
+                    <a href="docs.html" class="btn btn-primary">
+                        <i class="fas fa-book"></i>
+                        View Documentation
+                    </a>
+                </div>
+                <div class="callout-visual">
+                    <div class="docs-preview">
+                        <div class="docs-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Quick Start Guide</span>
+                        </div>
+                        <div class="docs-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Installation Instructions</span>
+                        </div>
+                        <div class="docs-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>25+ FAQ Questions</span>
+                        </div>
+                        <div class="docs-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Troubleshooting Guide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="updates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+                <p>Stay up to date with the latest features and improvements</p>
+            </div>
+            <div class="updates-timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Version 2.0 - Professional Edition</h3>
+                            <span class="timeline-date">Current Release</span>
+                        </div>
+                        <ul class="timeline-features">
+                            <li>Complete webhook management system</li>
+                            <li>Professional embed creator with webhook integration</li>
+                            <li>Modern GUI interface with theme switching</li>
+                            <li>Auto-update functionality with GitHub integration</li>
+                            <li>Cross-platform compatibility improvements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Version 1.5 - Feature Expansion</h3>
+                            <span class="timeline-date">Previous Release</span>
+                        </div>
+                        <ul class="timeline-features">
+                            <li>Added file attachment support</li>
+                            <li>Improved error handling and debugging</li>
+                            <li>Enhanced user interface components</li>
+                            <li>Better Discord API integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Version 2.1 - Advanced Features</h3>
+                            <span class="timeline-date">Coming Soon</span>
+                        </div>
+                        <ul class="timeline-features">
+                            <li>Scheduled message sending</li>
+                            <li>Webhook templates and presets</li>
+                            <li>Advanced embed formatting options</li>
+                            <li>Multi-server webhook management</li>
+                            <li>Plugin system for custom extensions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section id="developer" class="developer">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the Developer</h2>
+                <p>Active development and community support</p>
+            </div>
+            <div class="developer-card">
+                <div class="developer-avatar">
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user-code"></i>
+                    </div>
+                    <div class="status-indicator online"></div>
+                </div>
+                <div class="developer-info">
+                    <h3>DriizzyyB</h3>
+                    <p class="developer-title">Lead Developer & Creator</p>
+                    <p class="developer-description">
+                        Passionate developer focused on creating professional Discord tools 
+                        that respect platform guidelines while providing powerful functionality. 
+                        Active in the Discord development community with a commitment to 
+                        high-quality, user-friendly applications.
+                    </p>
+                    <div class="developer-stats">
+                        <div class="dev-stat">
+                            <i class="fab fa-github"></i>
+                            <span>Active on GitHub</span>
+                        </div>
+                        <div class="dev-stat">
+                            <i class="fas fa-code"></i>
+                            <span>Discord Expert</span>
+                        </div>
+                        <div class="dev-stat">
+                            <i class="fas fa-users"></i>
+                            <span>Community Driven</span>
+                        </div>
+                    </div>
+                    <div class="developer-links">
+                        <a href="https://github.com/driizzyy" class="dev-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub Profile
+                        </a>
+                        <a href="https://discord.gg/YOUR_DISCORD_SERVER" class="dev-link discord" target="_blank">
+                            <i class="fab fa-discord"></i>
+                            Join Discord Server
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Download Discord Webhook Creator Pro and experience professional webhook management</p>
+                <div class="download-options">
+                    <a href="https://github.com/driizzyy/Webhook-Creator/releases/latest" class="download-card primary">
+                        <div class="download-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Download Latest Release</h3>
+                            <p>Version 2.0 - Professional Edition</p>
+                            <span class="download-size">~5MB • Windows/Linux</span>
+                        </div>
+                        <div class="download-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/driizzyy/Webhook-Creator" class="download-card">
+                        <div class="download-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>View Source Code</h3>
+                            <p>GitHub Repository</p>
+                            <span class="download-size">Open Source • MIT License</span>
+                        </div>
+                        <div class="download-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="download-requirements">
+                    <h4>System Requirements</h4>
+                    <div class="requirements-grid">
+                        <div class="requirement">
+                            <i class="fas fa-desktop"></i>
+                            <span>Windows 10+ or Linux</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-memory"></i>
+                            <span>4GB RAM minimum</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-hdd"></i>
+                            <span>50MB free space</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-wifi"></i>
+                            <span>Internet connection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>Discord Webhook Creator Pro</span>
+                    </div>
+                    <p>Professional Discord webhook management system created by driizzyy</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/driizzyy" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://discord.gg/YOUR_DISCORD_SERVER" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#updates">Updates</a></li>
+                        <li><a href="#developer">Developer</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/driizzyy/Webhook-Creator" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://github.com/driizzyy/Webhook-Creator/releases" target="_blank">Releases</a></li>
+                        <li><a href="https://github.com/driizzyy/Webhook-Creator/issues" target="_blank">Report Issues</a></li>
+                        <li><a href="https://discord.com/developers/docs" target="_blank">Discord API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="https://github.com/driizzyy/Webhook-Creator/blob/main/LICENSE" target="_blank">MIT License</a></li>
+                        <li><a href="https://discord.com/terms" target="_blank">Discord ToS</a></li>
+                        <li><span>Discord ToS Compliant</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 driizzyy. All rights reserved. Discord Webhook Creator Pro is not affiliated with Discord Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/discord-api-utils.js"></script>
+    <script src="assets/js/discord-widget.js"></script>
+</body>
+</html>

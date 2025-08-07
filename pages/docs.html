@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Complete documentation for Discord Webhook Creator Pro - guides, tutorials, and API references.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link" style="color: var(--primary-color);">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <a href="auth.html" class="nav-link auth-btn">Sign In</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">
+                <i class="fas fa-book" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                Documentation
+            </h1>
+            <p class="page-description">Complete guides, tutorials, and API references for Discord Webhook Creator Pro</p>
+        </div>
+
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Quick Start -->
+            <div class="content-wrapper">
+                <h2>🚀 Quick Start Guide</h2>
+                <p class="lead">Get up and running with Discord Webhook Creator Pro in minutes</p>
+                
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">1. Download & Install</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Download the latest release from GitHub and run the executable. No installation required - it's a portable application.</p>
+                            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-base); margin-top: 1rem;">
+                                <p style="margin: 0; font-family: 'Courier New', monospace; font-size: var(--font-size-sm); color: var(--text-secondary);">
+                                    1. Download DiscordWebhookCreator.exe<br>
+                                    2. Run the executable<br>
+                                    3. Grant necessary permissions<br>
+                                    4. Start creating webhooks!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">2. Configure Your First Webhook</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Set up your first Discord webhook by adding the webhook URL from your Discord server settings.</p>
+                            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-base); margin-top: 1rem;">
+                                <p style="margin: 0; font-family: 'Courier New', monospace; font-size: var(--font-size-sm); color: var(--text-secondary);">
+                                    Discord Server → Settings → Integrations<br>
+                                    → Webhooks → Create Webhook<br>
+                                    → Copy webhook URL<br>
+                                    → Paste in Discord Webhook Creator Pro
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">3. Send Your First Message</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Create a simple message or rich embed and send it to your Discord channel through the webhook.</p>
+                            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-base); margin-top: 1rem;">
+                                <p style="margin: 0; font-family: 'Courier New', monospace; font-size: var(--font-size-sm); color: var(--text-secondary);">
+                                    1. Select webhook from dropdown<br>
+                                    2. Type your message or create embed<br>
+                                    3. Click "Send Message"<br>
+                                    4. Check your Discord channel!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Guides -->
+            <div class="content-wrapper">
+                <h2>📖 Feature Guides</h2>
+                <p class="lead">Detailed guides for all major features</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Creating Rich Embeds</h3>
+                        <p>Learn how to create beautiful rich embeds with custom colors, fields, images, and advanced formatting options.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#embed-guide" class="btn btn-primary btn-sm">
+                                <i class="fas fa-book-open"></i>
+                                Read Guide
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Webhook Management</h3>
+                        <p>Manage multiple webhooks, organize them by server and purpose, and configure advanced settings.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#webhook-guide" class="btn btn-primary btn-sm">
+                                <i class="fas fa-book-open"></i>
+                                Read Guide
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Templates & Presets</h3>
+                        <p>Create reusable templates, save common configurations, and speed up your workflow with presets.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#template-guide" class="btn btn-primary btn-sm">
+                                <i class="fas fa-book-open"></i>
+                                Read Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="content-wrapper">
+                <h2>❓ Frequently Asked Questions</h2>
+                <p class="lead">Common questions and troubleshooting tips</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">How do I get a Discord webhook URL?</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>To create a webhook in Discord:</p>
+                            <ol style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>Go to your Discord server settings</li>
+                                <li>Navigate to "Integrations" → "Webhooks"</li>
+                                <li>Click "Create Webhook"</li>
+                                <li>Configure the webhook name and channel</li>
+                                <li>Copy the webhook URL</li>
+                                <li>Paste it into Discord Webhook Creator Pro</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Is this against Discord's Terms of Service?</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>No! Discord Webhook Creator Pro uses the official Discord webhook API, which is fully supported and encouraged by Discord. We do not use any selfbot functionality or unofficial APIs.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Can I schedule messages to be sent later?</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Yes! The Pro version includes message scheduling functionality. You can schedule messages to be sent at specific times and dates, including recurring schedules.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">How do I import/export embed configurations?</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Use the "Import/Export" feature in the embed creator. You can export your embed as JSON for backup or sharing, and import JSON configurations from other sources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Reference -->
+            <div class="content-wrapper">
+                <h2>🔧 API Reference</h2>
+                <p class="lead">Technical documentation for developers</p>
+                
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-code"></i>
+                                Webhook Structure
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Standard Discord webhook JSON structure:</p>
+                            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-base); margin-top: 1rem; font-family: 'Courier New', monospace; font-size: var(--font-size-sm); overflow-x: auto;">
+<pre style="margin: 0; color: var(--text-secondary);">{
+  "content": "Message content",
+  "embeds": [{
+    "title": "Embed Title",
+    "description": "Embed description",
+    "color": 5814783,
+    "fields": [{
+      "name": "Field Name",
+      "value": "Field Value",
+      "inline": false
+    }],
+    "footer": {
+      "text": "Footer text"
+    },
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  }]
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-link"></i>
+                                Rate Limits
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Discord webhook rate limits:</p>
+                            <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                                <li><strong>5 requests per second</strong> per webhook</li>
+                                <li><strong>30 requests per minute</strong> per webhook</li>
+                                <li>Automatic rate limit handling included</li>
+                                <li>Queue system for batch operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div class="content-wrapper text-center">
+                <h2>Need More Help?</h2>
+                <p class="lead">Get support from our community and development team</p>
+                
+                <div style="margin: 2rem 0;">
+                    <a href="support.html" class="btn btn-primary btn-lg" style="margin-right: 1rem;">
+                        <i class="fas fa-life-ring"></i>
+                        Get Support
+                    </a>
+                    <a href="https://discord.gg/zwBeRaes4G" class="btn btn-outline btn-lg" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

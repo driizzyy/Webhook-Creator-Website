@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Discord Webhook Creator Pro</title>
+    <meta name="description" content="Sign in to access your Discord webhook dashboard and professional embed creator tools.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>Discord Webhook Creator Pro</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="docs.html" class="nav-link">Documentation</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="changelog.html" class="nav-link">Changelog</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); width: 64px; height: 64px; border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--light-color); font-size: 1.5rem;">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1 class="auth-title">Welcome Back</h1>
+                <p class="auth-subtitle">Sign in to access your webhook dashboard</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <i class="fas fa-envelope"></i>
+                        Email Address
+                    </label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">
+                        <i class="fas fa-lock"></i>
+                        Password
+                    </label>
+                    <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: var(--font-size-sm); cursor: pointer;">
+                        <input type="checkbox" id="remember" style="accent-color: var(--primary-color);">
+                        Remember me
+                    </label>
+                    <a href="#" style="color: var(--primary-color); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500;">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </button>
+            </form>
+
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; margin: 1.5rem 0;">
+                    <div style="flex: 1; height: 1px; background: var(--border-default);"></div>
+                    <span style="padding: 0 1rem; color: var(--text-muted); font-size: var(--font-size-sm);">or</span>
+                    <div style="flex: 1; height: 1px; background: var(--border-default);"></div>
+                </div>
+
+                <button class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;" onclick="loginWithDiscord()">
+                    <i class="fab fa-discord"></i>
+                    Continue with Discord
+                </button>
+
+                <button class="btn btn-secondary" style="width: 100%;" onclick="loginWithGitHub()">
+                    <i class="fab fa-github"></i>
+                    Continue with GitHub
+                </button>
+            </div>
+
+            <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--border-default);">
+                <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Don't have an account?</p>
+                <button class="btn btn-outline" onclick="showSignUp()">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal (Hidden by default) -->
+    <div id="signupModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 2000; align-items: center; justify-content: center;">
+        <div class="auth-card" style="margin: 2rem; max-height: 90vh; overflow-y: auto;">
+            <div class="auth-header">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <div style="background: linear-gradient(135deg, var(--success-color), var(--primary-color)); width: 64px; height: 64px; border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: var(--dark-color); font-size: 1.5rem;">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <button onclick="hideSignUp()" style="background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; padding: 0.5rem;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <h1 class="auth-title">Create Account</h1>
+                <p class="auth-subtitle">Join the Discord webhook community</p>
+            </div>
+
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="signupName" class="form-label">
+                        <i class="fas fa-user"></i>
+                        Full Name
+                    </label>
+                    <input type="text" id="signupName" class="form-input" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail" class="form-label">
+                        <i class="fas fa-envelope"></i>
+                        Email Address
+                    </label>
+                    <input type="email" id="signupEmail" class="form-input" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword" class="form-label">
+                        <i class="fas fa-lock"></i>
+                        Password
+                    </label>
+                    <input type="password" id="signupPassword" class="form-input" placeholder="Create a password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">
+                        <i class="fas fa-lock"></i>
+                        Confirm Password
+                    </label>
+                    <input type="password" id="confirmPassword" class="form-input" placeholder="Confirm your password" required>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-secondary); font-size: var(--font-size-sm); cursor: pointer; line-height: 1.5;">
+                        <input type="checkbox" id="agreeTerms" style="accent-color: var(--primary-color); margin-top: 0.125rem;" required>
+                        <span>I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+            </form>
+
+            <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-default);">
+                <p style="color: var(--text-secondary); margin-bottom: 0;">Already have an account?</p>
+                <button class="btn btn-outline" onclick="hideSignUp()" style="margin-top: 0.5rem;">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In Instead
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Check if already logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            const userToken = localStorage.getItem('userToken');
+            if (userToken) {
+                window.location.href = 'dashboard.html';
+            }
+        });
+
+        // Login form handler
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+
+            // Simulate login (replace with actual authentication)
+            if (email && password) {
+                // Demo credentials
+                if (email === 'demo@example.com' && password === 'demo123') {
+                    // Store auth token
+                    const token = 'demo_token_' + Date.now();
+                    if (remember) {
+                        localStorage.setItem('userToken', token);
+                        localStorage.setItem('userEmail', email);
+                    } else {
+                        sessionStorage.setItem('userToken', token);
+                        sessionStorage.setItem('userEmail', email);
+                    }
+                    
+                    // Redirect to dashboard
+                    window.location.href = 'dashboard.html';
+                } else {
+                    // For demo purposes, allow any email/password
+                    const token = 'user_token_' + Date.now();
+                    if (remember) {
+                        localStorage.setItem('userToken', token);
+                        localStorage.setItem('userEmail', email);
+                    } else {
+                        sessionStorage.setItem('userToken', token);
+                        sessionStorage.setItem('userEmail', email);
+                    }
+                    
+                    window.location.href = 'dashboard.html';
+                }
+            }
+        });
+
+        // Signup form handler
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const agreeTerms = document.getElementById('agreeTerms').checked;
+
+            if (!agreeTerms) {
+                alert('Please agree to the Terms of Service and Privacy Policy');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long');
+                return;
+            }
+
+            // Simulate signup
+            if (name && email && password) {
+                // Store user info
+                const token = 'new_user_token_' + Date.now();
+                localStorage.setItem('userToken', token);
+                localStorage.setItem('userEmail', email);
+                localStorage.setItem('userName', name);
+                
+                alert('Account created successfully!');
+                window.location.href = 'dashboard.html';
+            }
+        });
+
+        // Social login functions
+        function loginWithDiscord() {
+            alert('Discord OAuth integration would be implemented here');
+            // In a real app, this would redirect to Discord OAuth
+        }
+
+        function loginWithGitHub() {
+            alert('GitHub OAuth integration would be implemented here');
+            // In a real app, this would redirect to GitHub OAuth
+        }
+
+        // Modal functions
+        function showSignUp() {
+            document.getElementById('signupModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideSignUp() {
+            document.getElementById('signupModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('signupModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideSignUp();
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Demo login info
+        console.log('Demo Login: demo@example.com / demo123');
+        console.log('Or create a new account with any valid information');
+    </script>
+</body>
+</html>
